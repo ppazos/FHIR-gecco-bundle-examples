@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.guide.md
+- name: Introduction
+  filename: Introduction
+- name: GECCO Core
+  filename: GECCOCore
+- name: Terminologies
+  filename: Terminologies.guide.md

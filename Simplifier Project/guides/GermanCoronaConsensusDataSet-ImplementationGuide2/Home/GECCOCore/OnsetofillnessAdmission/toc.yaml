@@ -1,0 +1,4 @@
+- name: Index
+  filename: Index.guide.md
+- name: Stage at diagnosis
+  filename: Stageatdiagnosis.guide.md

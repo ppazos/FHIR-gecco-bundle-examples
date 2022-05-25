@@ -1,0 +1,406 @@
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="gecco-implementationguide" />
+  <url value="https://www.netzwerk-universitaetsmedizin.de/fhir/ImplementationGuide/germancoronaconsensusdataset-implementationguide" />
+  <version value="1.0.5" />
+  <name value="German Corona Consensus Data Set - Implementation Guide" />
+  <status value="draft" />
+  <description value="The German Corona Consensus Data Set (GECCO) is a nationally uniform data set for the systematic collection of scientific data on COVID-19 in Germany." />
+  <fhirVersion value="4.0.0" />
+  <definition>
+    <page>
+      <nameUrl value="Home.md" />
+      <title value="Home" />
+      <generation value="markdown" />
+      <page>
+        <nameUrl value="Introduction.md" />
+        <title value="Introduction" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="TransactionBundle.md" />
+          <title value="Transaction Bundle" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Patient.md" />
+          <title value="Patient" />
+          <generation value="markdown" />
+        </page>
+        <page>
+          <nameUrl value="Consent.md" />
+          <title value="Consent" />
+          <generation value="markdown" />
+        </page>
+      </page>
+      <page>
+        <nameUrl value="GECCOCore.md" />
+        <title value="GECCO Core" />
+        <generation value="markdown" />
+        <page>
+          <nameUrl value="AnamnesisRiskfactors.md" />
+          <title value="Anamnesis / Risk factors" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Chroniclungdiseases.md" />
+            <title value="Chronic lung diseases" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Disordersofcardiovascularsystem.md" />
+            <title value="Disorders of cardiovascular system" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Chronicliverdiseases.md" />
+            <title value="Chronic liver diseases" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Rheumatologicalimmunologicaldiseases.md" />
+            <title value="Rheumatological/immunological diseases" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Humanimmunodeficiencyvirusinfection.md" />
+            <title value="Human immunodeficiency virus infection" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Historyofbeingatissueororganrecipient.md" />
+            <title value="History of being a tissue or organ recipient" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Diabetesmellitus.md" />
+            <title value="Diabetes mellitus" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Malignantneoplasticdiseases.md" />
+            <title value="Malignant neoplastic diseases" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Tobaccosmokingstatus.md" />
+            <title value="Tobacco smoking status" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Chronicneurologicalormentaldiseases.md" />
+            <title value="Chronic neurological or mental diseases" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Respiratorytherapies.md" />
+            <title value="Respiratory therapies" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Chronickidneydiseases.md" />
+            <title value="Chronic kidney diseases" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Historyoftravel-duplicate-2.md" />
+            <title value="History of travel" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Gastrointestinalulcers.md" />
+            <title value="Gastrointestinal ulcers" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Immunizationstatus.md" />
+            <title value="Immunization status" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Resuscitationstatus.md" />
+            <title value="Resuscitation status" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Imaging.md" />
+          <title value="Imaging" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Imagingprocedures.md" />
+            <title value="Imaging procedures" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Radiologicalfindings.md" />
+            <title value="Radiological findings" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Demographics.md" />
+          <title value="Demographics" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Pregnancy.md" />
+            <title value="Pregnancy" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Ethnicgroup.md" />
+            <title value="Ethnic group" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Biologicalsex.md" />
+            <title value="Biological sex" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Dateofbirth.md" />
+            <title value="Date of birth" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Age.md" />
+            <title value="Age" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Frailtyscore.md" />
+            <title value="Frailty score" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Bodyweight.md" />
+            <title value="Body weight" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Bodyheight.md" />
+            <title value="Body height" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Epidemiologicalfactors.md" />
+          <title value="Epidemiological factors" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="ContactwithpersonssufferingfromCovid-19.md" />
+            <title value="Contact with persons suffering from Covid-19?" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Complications.md" />
+          <title value="Complications" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Complication.md" />
+            <title value="Complication" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="OnsetofillnessAdmission.md" />
+          <title value="Onset of illness / Admission" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Stageatdiagnosis.md" />
+            <title value="Stage at diagnosis" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Laboratoryvalues.md" />
+          <title value="Laboratory values" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Laboratoryvalue.md" />
+            <title value="Laboratory value" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="SARS-CoV-2-RT-PCR.md" />
+            <title value="SARS-CoV-2-RT-PCR" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="SARS-CoV-2antibodies.md" />
+            <title value="SARS-CoV-2 antibodies" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Medication.md" />
+          <title value="Medication" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Covid-19therapy.md" />
+            <title value="Covid-19 therapy" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="ACEinhibitors.md" />
+            <title value="ACE inhibitors" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Immunoglobulins.md" />
+            <title value="Immunoglobulins" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Anticoagulation.md" />
+            <title value="Anticoagulation" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Outcomeatdischarge.md" />
+          <title value="Outcome at discharge" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Respiratoryoutcome.md" />
+            <title value="Respiratory outcome" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Typeofdischarge.md" />
+            <title value="Type of discharge" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Follow-upswabresult.md" />
+            <title value="Follow-up swab result" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="StudyenrollmentInclusioncriteria.md" />
+          <title value="Study enrollment / Inclusion criteria" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="StudyenrolmentduetoCovid-19.md" />
+            <title value="Study enrolment due to Covid-19" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Interventionalstudiesparticipation.md" />
+            <title value="Interventional studies participation" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Symptoms.md" />
+          <title value="Symptoms" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="Symptom.md" />
+            <title value="Symptom" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Therapy.md" />
+          <title value="Therapy" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="DialysisHemofiltration.md" />
+            <title value="Dialysis / Hemofiltration" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Apheresis.md" />
+            <title value="Apheresis" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Proneposition.md" />
+            <title value="Prone position" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="ECMOtherapy.md" />
+            <title value="ECMO therapy" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Isthepatientintheintensivecareunit.md" />
+            <title value="Is the patient in the intensive care unit?" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Ventilationtype.md" />
+            <title value="Ventilation type" />
+            <generation value="markdown" />
+          </page>
+        </page>
+        <page>
+          <nameUrl value="Vitalsigns.md" />
+          <title value="Vital signs" />
+          <generation value="markdown" />
+          <page>
+            <nameUrl value="PaCO2.md" />
+            <title value="PaCO2" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="PaO2.md" />
+            <title value="PaO2" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="FiO2.md" />
+            <title value="FiO2" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="pH.md" />
+            <title value="pH" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="SOFA-Score-duplicate-2.md" />
+            <title value="SOFA-Score" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Respiratoryrate.md" />
+            <title value="Respiratory rate" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Diastolicbloodpressure.md" />
+            <title value="Diastolic blood pressure" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Systolicbloodpressure.md" />
+            <title value="Systolic blood pressure" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Heartrate.md" />
+            <title value="Heart rate" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Bodytemperature.md" />
+            <title value="Body temperature" />
+            <generation value="markdown" />
+          </page>
+          <page>
+            <nameUrl value="Peripheraloxygensaturation.md" />
+            <title value="Peripheral oxygen saturation" />
+            <generation value="markdown" />
+          </page>
+        </page>
+      </page>
+      <page>
+        <nameUrl value="Terminologies.md" />
+        <title value="Terminologies" />
+        <generation value="markdown" />
+      </page>
+    </page>
+  </definition>
+</ImplementationGuide>

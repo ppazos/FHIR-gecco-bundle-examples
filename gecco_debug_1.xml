@@ -1,0 +1,987 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="gecco-example-bundle" />
+    <meta>
+        <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle" />
+    </meta>
+    <type value="transaction" />
+    <timestamp value="2020-11-10T15:50:41+01:00" />
+    <entry>
+        <fullUrl value="urn:uuid:b1128693-372d-469b-8288-04cf091e7553" />
+        <resource>
+            <Patient>
+                <id value="b1128693-372d-469b-8288-04cf091e7553" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient" />
+                </meta>
+                <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group">
+                    <valueCoding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="186019001" />
+                        <display value="Other ethnic, mixed origin" />
+                    </valueCoding>
+                </extension>
+                <extension url="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age">
+                    <extension url="dateTimeOfDocumentation">
+                        <valueDateTime value="2020-10-01" />
+                    </extension>
+                    <extension url="age">
+                        <valueAge>
+                            <value value="67" />
+                            <unit value="years" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="a" />
+                        </valueAge>
+                    </extension>
+                </extension>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="MR" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/medical-record-numbers" />
+                    <value value="43814872" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <birthDate value="1953-09-30" />
+            </Patient>
+        </resource>
+        <request>
+            <method value="PUT" />
+            <url value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8d4c2cbb-bc80-4e5a-82f0-0babf997669e" />
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="23499ea6-d046-4e91-b7ab-d9cf040add73" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/observation-identifiers" />
+                    <value value="8302-2_BodyHeight" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="vital-signs" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="8302-2" />
+                        <display value="Body height" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="1153637007" />
+                        <display value="Body height (observable entity)" />
+                    </coding>
+                    <text value="Body height" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <effectiveDateTime value="2020-10-02" />
+                <valueQuantity>
+                    <value value="167" />
+                    <unit value="centimeter" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="cm" />
+                </valueQuantity>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8d4c2cbb-bc80-4e5a-82f0-0babf997569e" />
+        <resource>
+            <Procedure xmlns="http://hl7.org/fhir">
+                <id value="2b813af9-3b67-4f9c-ad82-865f7f6ffb67" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/apheresis" />
+                </meta>
+                <status value="not-done" />
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="277132007" />
+                        <display value="Therapeutic procedure (procedure)" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="127788007" />
+                        <display value="Apheresis (procedure)" />
+                    </coding>
+                    <text value="Apheresis" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <performedDateTime>
+                    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                        <valueCode value="not-performed" />
+                    </extension>
+                </performedDateTime>
+            </Procedure>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8d4c2cbb-bc81-4e5a-82f0-0babf997569e" />
+        <resource>
+            <Procedure xmlns="http://hl7.org/fhir">
+                <id value="7d07f267-e38e-4a4d-bd4d-24c08e4290bf" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures" />
+                </meta>
+                <status value="completed" />
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="103693007" />
+                        <display value="Diagnostic procedure (procedure)" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="16310003" />
+                        <display value="Diagnostic ultrasonography (procedure)" />
+                    </coding>
+                    <coding>
+                        <system value="http://dicom.nema.org/resources/ontology/DCM" />
+                        <code value="US" />
+                        <display value="Ultrasound" />
+                    </coding>
+                    <text value="Ultrasound" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <performedDateTime value="2020-09-30" />
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="39607008" />
+                        <display value="Lung structure (body structure)" />
+                    </coding>
+                </bodySite>
+                <report>
+                    <reference value="DiagnosticReport/example" />
+                </report>
+            </Procedure>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8d4c2cbb-bc81-4e5a-82f0-0babf997579e" />
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="7d07f287-e38e-4a4d-bd4d-24c08e4290bf" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/observation-identifiers" />
+                    <value value="8310-5_BodyTemperature" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="vital-signs" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="8310-5" />
+                        <display value="Body temperature" />
+                    </coding>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="8334-5" />
+                        <display value="Body temperature - Urinary bladder" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="386725007" />
+                        <display value="Body temperature (observable entity)" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="698832009" />
+                        <display value="Core body temperature measured at urinary bladder (observable entity)" />
+                    </coding>
+                    <text value="Body temperature" />
+                </code>
+                <subject>
+                    <reference value="Patient/c786ac3c-0579-4aa2-adda-db784b214ad6" />
+                </subject>
+                <effectiveDateTime value="2021-04-14" />
+                <valueQuantity>
+                    <value value="36.8" />
+                    <unit value="&#176;C" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="Cel" />
+                </valueQuantity>
+                <bodySite>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="89837001" />
+                        <display value="Urinary bladder structure (body structure)" />
+                    </coding>
+                </bodySite>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8d4c2cbb-bc81-4e5a-82f0-0babf997561e" />
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="93c0cef8-ad40-4b16-b164-6c7a989b162a" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pregnancy-status" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/observation-identifiers" />
+                    <value value="82810-3_PregnancyDtatus" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="social-history" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="82810-3" />
+                        <display value="Pregnancy status" />
+                    </coding>
+                    <text value="Pregnancy status" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <effectiveDateTime value="2020-10-02" />
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="LA26683-5" />
+                        <display value="Not pregnant" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="60001007" />
+                        <display value="Not pregnant (finding)" />
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8d4c2cbb-bc81-4e5a-82f0-0babf997560e" />
+        <resource>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="526cafdc-3249-4ea7-b058-a0c82c81bda9" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-ulcers" />
+                </meta>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+                        <code value="refuted" />
+                        <display value="Refuted" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="410594000" />
+                        <display value="Definitely NOT present (qualifier value)" />
+                    </coding>
+                </verificationStatus>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="394584008" />
+                        <display value="Gastroenterology" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="40845000" />
+                        <display value="Gastrointestinal ulcer" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/c786ac3c-0579-4aa2-adda-db784b214ad6" />
+                </subject>
+                <recordedDate value="2020-10-06" />
+            </Condition>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:8d4c2cbb-bc80-4e5a-82f0-0babf997660e" />
+        <resource>
+            <Condition>
+                <id value="8d4c2cbb-bc80-4e5a-82f0-0babf997660e" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases" />
+                </meta>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+                        <code value="active" />
+                        <display value="Active" />
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+                        <code value="confirmed" />
+                        <display value="Confirmed" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="410605003" />
+                        <display value="Confirmed present (qualifier value)" />
+                    </coding>
+                </verificationStatus>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="418112009" />
+                        <display value="Pulmonary medicine" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="413839001" />
+                        <display value="Chronic lung disease" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <recordedDate value="2020-11-10T15:50:41+01:00" />
+            </Condition>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb511a-07be-4f2d-9444-54a4171a45a4" />
+        <resource>
+            <Observation>
+                <id value="cabb511a-07be-4f2d-9444-54a4171a45a4" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/lab-identifiers" />
+                    <value value="94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen" />
+                    <assigner>
+                        <reference value="Organization/Charité;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="26436-6" />
+                    </coding>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="laboratory" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="94500-6" />
+                        <display value="SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection" />
+                    </coding>
+                    <text value="SARS-CoV-2-RNA (PCR)" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <effectiveDateTime value="2020-11-10T15:50:41+01:00" />
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="260373001" />
+                        <display value="Detected (qualifier value)" />
+                    </coding>
+                    <text value="SARS-CoV-2-RNA positiv" />
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb511a-07be-4f2d-9444-54a4172a45a4" />
+        <resource>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="f433f5d0-43d2-46bc-8d94-790714d9d0ac" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases" />
+                </meta>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+                        <code value="refuted" />
+                        <display value="Refuted" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="410594000" />
+                        <display value="Definitely NOT present (qualifier value)" />
+                    </coding>
+                </verificationStatus>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="394591006" />
+                        <display value="Neurology" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="394587001" />
+                        <display value="Psychiatry" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="69322001" />
+                        <display value="Psychotic disorder" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <recordedDate value="2020-10-06" />
+            </Condition>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb511a-07be-4f2d-9444-54a4172a45b4" />
+        <resource>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="c8aa5893-1f5e-4d1b-b37d-146a48a39581" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-kidney-diseases" />
+                </meta>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+                        <code value="active" />
+                        <display value="Active" />
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+                        <code value="confirmed" />
+                        <display value="Confirmed" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="410605003" />
+                        <display value="Confirmed present (qualifier value)" />
+                    </coding>
+                </verificationStatus>
+                <category>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="394589003" />
+                        <display value="Nephrology (qualifier value)" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="709044004" />
+                        <display value="Chronic kidney disease (disorder)" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <recordedDate value="2020-10-28T17:01:09+01:00" />
+            </Condition>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb511a-07be-4f2d-9434-54a4172a45b4" />
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="eee655bf-87c3-4567-9fb0-2609b535cd14" />
+                <meta>
+                    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/lab-identifiers" />
+                    <value value="1988-5_c-reactive-protein-mass-per-volume-in-serum-or-plasma" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="26436-6" />
+                    </coding>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="laboratory" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="1988-5" />
+                        <display value="C reactive protein [Mass/volume] in Serum or Plasma" />
+                    </coding>
+                    <text value="CRP" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <effectiveDateTime value="2020-10-16T08:49:21+02:00" />
+                <valueQuantity>
+                    <value value="4.9" />
+                    <unit value="mg/L" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="mg/L" />
+                </valueQuantity>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb512a-07be-4f2d-9434-54a4172a45b4" />
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="fceefb1a-56bf-4a39-818c-e69d24d6502f" />
+                <meta>
+                    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/lab-identifiers" />
+                    <value value="2160-0_creatinine-mass-per-volume-in-serum-or-plasma" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="26436-6" />
+                    </coding>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="laboratory" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="2160-0" />
+                        <display value="Creatinine [Mass/volume] in Serum or Plasma" />
+                    </coding>
+                    <text value="Creatinine" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <effectiveDateTime value="2020-10-16T08:49:21+02:00" />
+                <valueQuantity>
+                    <value value="0.9" />
+                    <unit value="mg/dL" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="mg/dL" />
+                </valueQuantity>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb512a-07be-4f2d-9424-54a4172a45b4" />
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="d8227682-e142-4a69-8616-2e6269f814b3" />
+                <meta>
+                    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/lab-identifiers" />
+                    <value value="2276-4_ferritin-mass-per-volume-in-serum-or-plasma" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="26436-6" />
+                    </coding>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="laboratory" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="2276-4" />
+                        <display value="Ferritin [Mass/volume] in Serum or Plasma" />
+                    </coding>
+                    <text value="Ferritin" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <effectiveDateTime value="2020-10-16T08:49:21+02:00" />
+                <valueQuantity>
+                    <value value="167.4" />
+                    <unit value="ng/mL" />
+                    <system value="http://unitsofmeasure.org" />
+                    <code value="ng/mL" />
+                </valueQuantity>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb512a-07be-4f2d-9494-54a4172a45b4" />
+        <resource>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="eb010879-b54b-42d1-8e01-ec42ba61e7d8" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19" />
+                </meta>
+                <clinicalStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+                        <code value="active" />
+                        <display value="Active" />
+                    </coding>
+                </clinicalStatus>
+                <verificationStatus>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+                        <code value="confirmed" />
+                        <display value="Confirmed" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="410605003" />
+                        <display value="Confirmed present (qualifier value)" />
+                    </coding>
+                </verificationStatus>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="75325-1" />
+                        <display value="Symptom" />
+                    </coding>
+                </category>
+                <severity>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="24484000" />
+                        <display value="Severe" />
+                    </coding>
+                </severity>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="49727002" />
+                        <display value="Cough" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <recordedDate value="2020-10-05" />
+            </Condition>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb512a-02be-4f2d-9494-54a4172a45b4" />
+        <resource>
+            <Condition xmlns="http://hl7.org/fhir">
+                <id value="8cb12ab0-3563-4154-bfeb-25aa897c2105" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19" />
+                </meta>
+                <modifierExtension url="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="261665006" />
+                            <display value="Unknown (qualifier value)" />
+                        </coding>
+                        <text value="Presence of symptom is unknown." />
+                    </valueCodeableConcept>
+                </modifierExtension>
+                <category>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="75325-1" />
+                        <display value="Symptom" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="36955009" />
+                        <display value="Loss of taste" />
+                    </coding>
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <recordedDate value="2020-10-05" />
+            </Condition>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb512a-02be-4f3d-9494-54a4172a45b4" />
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="3925fe1b-1b94-4132-bb32-7b4bc34b2a1e" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/lab-identifiers" />
+                    <value value="94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="26436-6" />
+                    </coding>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="laboratory" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="94500-6" />
+                        <display value="SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection" />
+                    </coding>
+                    <text value="SARS-CoV-2-RNA (PCR)" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <effectiveDateTime value="2020-10-16T08:49:21+02:00" />
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="260373001" />
+                        <display value="Detected (qualifier value)" />
+                    </coding>
+                    <text value="SARS-CoV-2-RNA positiv" />
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:cabb512a-02be-4f3f-9494-54a4172a45b4" />
+        <resource>
+            <Observation xmlns="http://hl7.org/fhir">
+                <id value="813f6951-d737-4e43-f078-40adfe468892" />
+                <meta>
+                    <profile value="https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-travel" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                            <code value="OBI" />
+                        </coding>
+                    </type>
+                    <system value="https://www.charite.de/fhir/CodeSystem/observation-identifiers" />
+                    <value value="8691-8_HistoryOfTravel" />
+                    <assigner>
+                        <reference value="Organization/Charit&#233;" />
+                    </assigner>
+                </identifier>
+                <status value="final" />
+                <category>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/observation-category" />
+                        <code value="social-history" />
+                    </coding>
+                </category>
+                <code>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="8691-8" />
+                        <display value="History of Travel" />
+                    </coding>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="443846001" />
+                        <display value="Detail of history of travel (observable entity)" />
+                    </coding>
+                    <text value="History of travel" />
+                </code>
+                <subject>
+                    <reference value="Patient/b1128693-372d-469b-8288-04cf091e7553" />
+                </subject>
+                <effectiveDateTime value="2020-11-09T12:57:06+01:00" />
+                <valueCodeableConcept>
+                    <coding>
+                        <system value="http://snomed.info/sct" />
+                        <code value="261665006" />
+                        <display value="Unknown (qualifier value)" />
+                    </coding>
+                </valueCodeableConcept>
+            </Observation>
+        </resource>
+        <request>
+            <method value="POST" />
+            <url value="Condition" />
+        </request>
+    </entry>
+</Bundle>

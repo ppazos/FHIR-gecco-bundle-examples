@@ -1,0 +1,71 @@
+{
+	"resourceType": "Bundle",
+	"id": "3485de99-7358-4afe-8e51-7622860dcab3",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
+		]
+	},
+	"type": "transaction",
+	"timestamp": "2020-11-10T15:50:41+01:00",
+	"entry": [
+		{
+			"resource": {
+				"resourceType": "Patient",
+				"id": "1dd95132-2bb5-4bce-99d3-b09394b47d63",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+						"valueCoding": {
+							"system": "urn:oid:2.16.840.1.113883.6.238",
+							"code": "2135-2",
+							"display": "Hispanic or Latino"
+						}
+					},
+					{
+						"extension": [
+							{
+								"url": "dateTimeOfDocumentation",
+								"valueDateTime": "2020-10-01"
+							},
+							{
+								"url": "age",
+								"valueAge": {
+									"value": 67,
+									"unit": "years",
+									"system": "http://unitsofmeasure.org",
+									"code": "a"
+								}
+							}
+						],
+						"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
+					}
+				],
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "ANON"
+								}
+							]
+						},
+						"system": "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym",
+						"value": "6667778"
+					}
+				],
+				"birthDate": "1955-03-16"
+			},
+			"request": {
+				"method": "PUT",
+				"url": "Patient/1dd95132-2bb5-4bce-99d3-b09394b47d63"
+			}
+		}
+	]
+}

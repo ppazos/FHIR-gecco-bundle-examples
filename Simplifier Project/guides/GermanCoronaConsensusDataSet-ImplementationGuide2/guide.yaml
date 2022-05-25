@@ -1,0 +1,5 @@
+title: GECCO - Implementation Guide 1.0.5
+description: The German Corona Consensus Data Set (GECCO) is a nationally uniform data set for the systematic collection of scientific data on COVID-19 in Germany.
+version: 1.0.5
+style-root: styles
+style-name: treetable

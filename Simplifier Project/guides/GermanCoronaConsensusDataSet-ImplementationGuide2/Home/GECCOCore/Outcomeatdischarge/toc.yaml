@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.guide.md
+- name: Respiratory outcome
+  filename: Respiratoryoutcome.guide.md
+- name: Type of discharge
+  filename: Typeofdischarge.guide.md
+- name: Follow-up swab result
+  filename: Follow-upswabresult.guide.md

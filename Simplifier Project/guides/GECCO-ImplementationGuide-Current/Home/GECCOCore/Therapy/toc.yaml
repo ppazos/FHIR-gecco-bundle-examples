@@ -1,0 +1,14 @@
+- name: Index
+  filename: Index.guide.md
+- name: Dialysis / Hemofiltration
+  filename: DialysisHemofiltration.guide.md
+- name: Apheresis
+  filename: Apheresis.guide.md
+- name: Prone position
+  filename: Proneposition.guide.md
+- name: ECMO therapy
+  filename: ECMOtherapy.guide.md
+- name: Is the patient in the intensive care unit?
+  filename: Isthepatientintheintensivecareunit.guide.md
+- name: Ventilation type
+  filename: Ventilationtype.guide.md

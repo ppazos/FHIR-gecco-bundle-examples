@@ -1,0 +1,24 @@
+- name: Index
+  filename: Index.guide.md
+- name: PaCO2
+  filename: PaCO2.guide.md
+- name: PaO2
+  filename: PaO2.guide.md
+- name: FiO2
+  filename: FiO2.guide.md
+- name: pH
+  filename: pH.guide.md
+- name: SOFA-Score
+  filename: SOFA-Score-duplicate-2.guide.md
+- name: Respiratory rate
+  filename: Respiratoryrate.guide.md
+- name: Diastolic blood pressure
+  filename: Diastolicbloodpressure.guide.md
+- name: Systolic blood pressure
+  filename: Systolicbloodpressure.guide.md
+- name: Heart rate
+  filename: Heartrate.guide.md
+- name: Body temperature
+  filename: Bodytemperature.guide.md
+- name: Peripheral oxygen saturation
+  filename: Peripheraloxygensaturation.guide.md

@@ -1,0 +1,1198 @@
+{
+	"resourceType": "Bundle",
+	"id": "gecco-example-bundle",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
+		]
+	},
+	"type": "transaction",
+	"timestamp": "2020-11-10T15:50:41+01:00",
+	"entry": [
+		{
+			"fullUrl": "urn:uuid:b1128693-372d-469b-8288-04cf091e7553",
+			"resource": {
+				"resourceType": "Patient",
+				"id": "b1128693-372d-469b-8288-04cf091e7553",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+					]
+				},
+				"extension": [
+					{
+						"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+						"valueCoding": {
+							"system": "http://snomed.info/sct",
+							"code": "186019001",
+							"display": "Other ethnic, mixed origin"
+						}
+					},
+					{
+						"extension": [
+							{
+								"url": "dateTimeOfDocumentation",
+								"valueDateTime": "2020-10-01"
+							},
+							{
+								"url": "age",
+								"valueAge": {
+									"value": 67,
+									"unit": "years",
+									"system": "http://unitsofmeasure.org",
+									"code": "a"
+								}
+							}
+						],
+						"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
+					}
+				],
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "MR"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/medical-record-numbers",
+						"value": "43814872",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"birthDate": "1953-09-30"
+			},
+			"request": {
+				"method": "PUT",
+				"url": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:8d4c2cbb-bc80-4e5a-82f0-0babf997669e",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "23499ea6-d046-4e91-b7ab-d9cf040add73",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+						"value": "8302-2_BodyHeight",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "8302-2",
+							"display": "Body height"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "1153637007",
+							"display": "Body height (observable entity)"
+						}
+					],
+					"text": "Body height"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"effectiveDateTime": "2020-10-02",
+				"valueQuantity": {
+					"value": 167,
+					"unit": "centimeter",
+					"system": "http://unitsofmeasure.org",
+					"code": "cm"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:8d4c2cbb-bc80-4e5a-82f0-0babf997569e",
+			"resource": {
+				"resourceType": "Procedure",
+				"id": "2b813af9-3b67-4f9c-ad82-865f7f6ffb67",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/apheresis"
+					]
+				},
+				"status": "not-done",
+				"category": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "277132007",
+							"display": "Therapeutic procedure (procedure)"
+						}
+					]
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "127788007",
+							"display": "Apheresis (procedure)"
+						}
+					],
+					"text": "Apheresis"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"_performedDateTime": {
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+							"valueCode": "not-performed"
+						}
+					]
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:8d4c2cbb-bc81-4e5a-82f0-0babf997569e",
+			"resource": {
+				"resourceType": "Procedure",
+				"id": "7d07f267-e38e-4a4d-bd4d-24c08e4290bf",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures"
+					]
+				},
+				"status": "completed",
+				"category": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "103693007",
+							"display": "Diagnostic procedure (procedure)"
+						}
+					]
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "16310003",
+							"display": "Diagnostic ultrasonography (procedure)"
+						},
+						{
+							"system": "http://dicom.nema.org/resources/ontology/DCM",
+							"code": "US",
+							"display": "Ultrasound"
+						}
+					],
+					"text": "Ultrasound"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"performedDateTime": "2020-09-30",
+				"bodySite": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "39607008",
+								"display": "Lung structure (body structure)"
+							}
+						]
+					}
+				],
+				"report": [
+					{
+						"reference": "DiagnosticReport/example"
+					}
+				]
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:8d4c2cbb-bc81-4e5a-82f0-0babf997579e",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "7d07f287-e38e-4a4d-bd4d-24c08e4290bf",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+						"value": "8310-5_BodyTemperature",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "vital-signs"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "8310-5",
+							"display": "Body temperature"
+						},
+						{
+							"system": "http://loinc.org",
+							"code": "8334-5",
+							"display": "Body temperature - Urinary bladder"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "386725007",
+							"display": "Body temperature (observable entity)"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "698832009",
+							"display": "Core body temperature measured at urinary bladder (observable entity)"
+						}
+					],
+					"text": "Body temperature"
+				},
+				"subject": {
+					"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+				},
+				"effectiveDateTime": "2021-04-14",
+				"valueQuantity": {
+					"value": 36.8,
+					"unit": "°C",
+					"system": "http://unitsofmeasure.org",
+					"code": "Cel"
+				},
+				"bodySite": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "89837001",
+							"display": "Urinary bladder structure (body structure)"
+						}
+					]
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:8d4c2cbb-bc81-4e5a-82f0-0babf997561e",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "93c0cef8-ad40-4b16-b164-6c7a989b162a",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pregnancy-status"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+						"value": "82810-3_PregnancyDtatus",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "social-history"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "82810-3",
+							"display": "Pregnancy status"
+						}
+					],
+					"text": "Pregnancy status"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"effectiveDateTime": "2020-10-02",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "LA26683-5",
+							"display": "Not pregnant"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "60001007",
+							"display": "Not pregnant (finding)"
+						}
+					]
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:8d4c2cbb-bc81-4e5a-82f0-0babf997560e",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "526cafdc-3249-4ea7-b058-a0c82c81bda9",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-ulcers"
+					]
+				},
+				"verificationStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+							"code": "refuted",
+							"display": "Refuted"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "410594000",
+							"display": "Definitely NOT present (qualifier value)"
+						}
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "394584008",
+								"display": "Gastroenterology"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "40845000",
+							"display": "Gastrointestinal ulcer"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/c786ac3c-0579-4aa2-adda-db784b214ad6"
+				},
+				"recordedDate": "2020-10-06"
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:8d4c2cbb-bc80-4e5a-82f0-0babf997660e",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "8d4c2cbb-bc80-4e5a-82f0-0babf997660e",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
+					]
+				},
+				"clinicalStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+							"code": "active",
+							"display": "Active"
+						}
+					]
+				},
+				"verificationStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+							"code": "confirmed",
+							"display": "Confirmed"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "410605003",
+							"display": "Confirmed present (qualifier value)"
+						}
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "418112009",
+								"display": "Pulmonary medicine"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "413839001",
+							"display": "Chronic lung disease"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"recordedDate": "2020-11-10T15:50:41+01:00"
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb511a-07be-4f2d-9444-54a4171a45a4",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "cabb511a-07be-4f2d-9444-54a4171a45a4",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+						"value": "94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen",
+						"assigner": {
+							"reference": "Organization/Charité;"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://loinc.org",
+								"code": "26436-6"
+							},
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "laboratory"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "94500-6",
+							"display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
+						}
+					],
+					"text": "SARS-CoV-2-RNA (PCR)"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"effectiveDateTime": "2020-11-10T15:50:41+01:00",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "260373001",
+							"display": "Detected (qualifier value)"
+						}
+					],
+					"text": "SARS-CoV-2-RNA positiv"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb511a-07be-4f2d-9444-54a4172a45a4",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "f433f5d0-43d2-46bc-8d94-790714d9d0ac",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases"
+					]
+				},
+				"verificationStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+							"code": "refuted",
+							"display": "Refuted"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "410594000",
+							"display": "Definitely NOT present (qualifier value)"
+						}
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "394591006",
+								"display": "Neurology"
+							},
+							{
+								"system": "http://snomed.info/sct",
+								"code": "394587001",
+								"display": "Psychiatry"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "69322001",
+							"display": "Psychotic disorder"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"recordedDate": "2020-10-06"
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb511a-07be-4f2d-9444-54a4172a45b4",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "c8aa5893-1f5e-4d1b-b37d-146a48a39581",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-kidney-diseases"
+					]
+				},
+				"clinicalStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+							"code": "active",
+							"display": "Active"
+						}
+					]
+				},
+				"verificationStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+							"code": "confirmed",
+							"display": "Confirmed"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "410605003",
+							"display": "Confirmed present (qualifier value)"
+						}
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://snomed.info/sct",
+								"code": "394589003",
+								"display": "Nephrology (qualifier value)"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "709044004",
+							"display": "Chronic kidney disease (disorder)"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"recordedDate": "2020-10-28T17:01:09+01:00"
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb511a-07be-4f2d-9434-54a4172a45b4",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "eee655bf-87c3-4567-9fb0-2609b535cd14",
+				"meta": {
+					"profile": [
+						"https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+						"value": "1988-5_c-reactive-protein-mass-per-volume-in-serum-or-plasma",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://loinc.org",
+								"code": "26436-6"
+							},
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "laboratory"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "1988-5",
+							"display": "C reactive protein [Mass/volume] in Serum or Plasma"
+						}
+					],
+					"text": "CRP"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"effectiveDateTime": "2020-10-16T08:49:21+02:00",
+				"valueQuantity": {
+					"value": 4.9,
+					"unit": "mg/L",
+					"system": "http://unitsofmeasure.org",
+					"code": "mg/L"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb512a-07be-4f2d-9434-54a4172a45b4",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "fceefb1a-56bf-4a39-818c-e69d24d6502f",
+				"meta": {
+					"profile": [
+						"https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+						"value": "2160-0_creatinine-mass-per-volume-in-serum-or-plasma",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://loinc.org",
+								"code": "26436-6"
+							},
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "laboratory"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "2160-0",
+							"display": "Creatinine [Mass/volume] in Serum or Plasma"
+						}
+					],
+					"text": "Creatinine"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"effectiveDateTime": "2020-10-16T08:49:21+02:00",
+				"valueQuantity": {
+					"value": 0.9,
+					"unit": "mg/dL",
+					"system": "http://unitsofmeasure.org",
+					"code": "mg/dL"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb512a-07be-4f2d-9424-54a4172a45b4",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "d8227682-e142-4a69-8616-2e6269f814b3",
+				"meta": {
+					"profile": [
+						"https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+						"value": "2276-4_ferritin-mass-per-volume-in-serum-or-plasma",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://loinc.org",
+								"code": "26436-6"
+							},
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "laboratory"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "2276-4",
+							"display": "Ferritin [Mass/volume] in Serum or Plasma"
+						}
+					],
+					"text": "Ferritin"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"effectiveDateTime": "2020-10-16T08:49:21+02:00",
+				"valueQuantity": {
+					"value": 167.4,
+					"unit": "ng/mL",
+					"system": "http://unitsofmeasure.org",
+					"code": "ng/mL"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb512a-07be-4f2d-9494-54a4172a45b4",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "eb010879-b54b-42d1-8e01-ec42ba61e7d8",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19"
+					]
+				},
+				"clinicalStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+							"code": "active",
+							"display": "Active"
+						}
+					]
+				},
+				"verificationStatus": {
+					"coding": [
+						{
+							"system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+							"code": "confirmed",
+							"display": "Confirmed"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "410605003",
+							"display": "Confirmed present (qualifier value)"
+						}
+					]
+				},
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://loinc.org",
+								"code": "75325-1",
+								"display": "Symptom"
+							}
+						]
+					}
+				],
+				"severity": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "24484000",
+							"display": "Severe"
+						}
+					]
+				},
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "49727002",
+							"display": "Cough"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"recordedDate": "2020-10-05"
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb512a-02be-4f2d-9494-54a4172a45b4",
+			"resource": {
+				"resourceType": "Condition",
+				"id": "8cb12ab0-3563-4154-bfeb-25aa897c2105",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19"
+					]
+				},
+				"modifierExtension": [
+					{
+						"url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+						"valueCodeableConcept": {
+							"coding": [
+								{
+									"system": "http://snomed.info/sct",
+									"code": "261665006",
+									"display": "Unknown (qualifier value)"
+								}
+							],
+							"text": "Presence of symptom is unknown."
+						}
+					}
+				],
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://loinc.org",
+								"code": "75325-1",
+								"display": "Symptom"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "36955009",
+							"display": "Loss of taste"
+						}
+					]
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"recordedDate": "2020-10-05"
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb512a-02be-4f3d-9494-54a4172a45b4",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "3925fe1b-1b94-4132-bb32-7b4bc34b2a1e",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+						"value": "94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://loinc.org",
+								"code": "26436-6"
+							},
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "laboratory"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "94500-6",
+							"display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
+						}
+					],
+					"text": "SARS-CoV-2-RNA (PCR)"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"effectiveDateTime": "2020-10-16T08:49:21+02:00",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "260373001",
+							"display": "Detected (qualifier value)"
+						}
+					],
+					"text": "SARS-CoV-2-RNA positiv"
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		},
+		{
+			"fullUrl": "urn:uuid:cabb512a-02be-4f3f-9494-54a4172a45b4",
+			"resource": {
+				"resourceType": "Observation",
+				"id": "813f6951-d737-4e43-f078-40adfe468892",
+				"meta": {
+					"profile": [
+						"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-travel"
+					]
+				},
+				"identifier": [
+					{
+						"type": {
+							"coding": [
+								{
+									"system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+									"code": "OBI"
+								}
+							]
+						},
+						"system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+						"value": "8691-8_HistoryOfTravel",
+						"assigner": {
+							"reference": "Organization/Charité"
+						}
+					}
+				],
+				"status": "final",
+				"category": [
+					{
+						"coding": [
+							{
+								"system": "http://terminology.hl7.org/CodeSystem/observation-category",
+								"code": "social-history"
+							}
+						]
+					}
+				],
+				"code": {
+					"coding": [
+						{
+							"system": "http://loinc.org",
+							"code": "8691-8",
+							"display": "History of Travel"
+						},
+						{
+							"system": "http://snomed.info/sct",
+							"code": "443846001",
+							"display": "Detail of history of travel (observable entity)"
+						}
+					],
+					"text": "History of travel"
+				},
+				"subject": {
+					"reference": "Patient/b1128693-372d-469b-8288-04cf091e7553"
+				},
+				"effectiveDateTime": "2020-11-09T12:57:06+01:00",
+				"valueCodeableConcept": {
+					"coding": [
+						{
+							"system": "http://snomed.info/sct",
+							"code": "261665006",
+							"display": "Unknown (qualifier value)"
+						}
+					]
+				}
+			},
+			"request": {
+				"method": "POST",
+				"url": "Condition"
+			}
+		}
+	]
+}
