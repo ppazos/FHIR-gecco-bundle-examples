@@ -88,11 +88,11 @@ parsed_examples.each { example ->
 }
 
 // pick just one of each examples that match the each requested profile
-def rnd_index, final_output_examples = []
+def rnd_index, rnd, final_output_examples = []
 output_examples.each {
 
    //println it.key +" "+ it.value.size()
-   def rnd = random.nextInt(it.value.size())
+   rnd = random.nextInt(it.value.size())
    //println rnd
    final_output_examples << it.value[rnd]
 }
@@ -194,4 +194,5 @@ bundle_map.entry.each { bundle_entry ->
 }
 
 // serialize bundle to JSON
+// TODO: add option to generate minimal or pretty printed output
 println groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(bundle_map))
