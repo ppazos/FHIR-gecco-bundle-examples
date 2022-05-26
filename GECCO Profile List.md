@@ -3,23 +3,23 @@
 - Apheresis
 - Dialysis
 - Extracorporeal membrane oxygenation
-- Clinical Frailty Scale Score
-- PaCO2 (Carbon dioxide partial pressure in blood)
-- PaO2 (Oxygen partial pressure in blood)
-- pH (pH-value of Blood)
 - Prone Position
 - Radiology Procedures
 - Respiration Therapies
 
 # OBSERVATION
 
-- Blood Gas Panel
-- Blood Pressure > Vital Signs Base Profile
-- Body Height > Vital Signs Base Profile
-- Body Temperature > Vital Signs Base Profile
-- Body Weight > Vital Signs Base Profile
-- Discharge Disposition
-- Heart Rate > Vital Signs Base Profile
+- Blood Gas Panel (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-gas-panel)
+- Blood Pressure > Vital Signs Base Profile (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure)
+- Body Height > Vital Signs Base Profile (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height)
+- Body Temperature > Vital Signs Base Profile (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature)
+- Body Weight > Vital Signs Base Profile (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight)
+- Discharge Disposition (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/discharge-disposition)
+- Clinical Frailty Scale Score (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score)
+- PaCO2 (Carbon dioxide partial pressure in blood) (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure)
+- PaO2 (Oxygen partial pressure in blood) (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-partial-pressure)
+- pH (pH-value of Blood) (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH)
+- Heart Rate > Vital Signs Base Profile (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate)
 - History Of Travel
 - Interventional Clinical Trial Participation
 - Known Exposure to Covid-19
@@ -28,7 +28,7 @@
 - Patient in ICU
 - Pregnancy Status
 - Respiration Rate > Vital Signs Base Profile
-- Vital Signs Base Profile
+- Vital Signs Base Profile (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/vital-signs-base)
 
 # CONDITION
 
@@ -66,7 +66,7 @@
 
 # PATIENT
 
-- Patient
+- Patient (https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient)
 
 # MEDICATION STATEMENT
 

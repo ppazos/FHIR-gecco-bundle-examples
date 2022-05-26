@@ -1,0 +1,14 @@
+{
+	"resourceType": "Bundle",
+	"id": "3485de99-7358-4afe-8e51-7622860dcab3",
+	"meta": {
+		"profile": [
+			"https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
+		]
+	},
+	"type": "transaction",
+	"timestamp": "2020-11-10T15:50:41+01:00",
+	"entry": [
+		
+	]
+}
