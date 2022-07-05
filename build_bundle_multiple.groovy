@@ -27,7 +27,7 @@ n.times {
    def out = in1.text
    in1.close()
    child.waitFor()
-   def path = "out"+ PS +"bundle_"+ it +".json"
+   def path = "output"+ PS +"bundle_"+ it +".json"
    def file = new File(path)
    file << out
    println "Bundle saved in ${path}"

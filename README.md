@@ -33,7 +33,7 @@ To store the output in a file:
 
 > $ groovy build_bundle_multiple.groovy -wp bundle1_profies -n 10
 
-This will generate 10 JSON bundles in the `/out` folder. If the `-n` argument is not provided, it will generate 10 by default.
+This will generate 10 JSON bundles in the `/output` folder. If the `-n` argument is not provided, it will generate 10 by default.
 
 ## 5. Using bloom-filter identifiers
 
@@ -45,7 +45,7 @@ This will generate 1 bundle, print it to the standard output, and the patient.id
 
 > $ groovy build_bundle_multiple.groovy -wp bundle1_profies -n 10 -pid identifiers
 
-This will generate 10 bundles in the `/out` folder, and the patient.identifier.value will be taken from the `identifiers` file randomly for each bundle.
+This will generate 10 bundles in the `/output` folder, and the patient.identifier.value will be taken from the `identifiers` file randomly for each bundle.
 
 NOTE: the `/debugging_daten_bloomfilter` folder contains many files with identifiers.
 

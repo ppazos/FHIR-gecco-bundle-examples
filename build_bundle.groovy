@@ -140,6 +140,8 @@ if (options.pid)
    patient_identifier = ids[rnd_index]
 }
 
+//println patient_identifier
+
 final_output_examples.each { example ->
 
    entry = [
@@ -156,8 +158,8 @@ final_output_examples.each { example ->
       entry.resource.id = patient_id
 
       // if the patient example doesn't have an identifier, add one
-      if (!entry.resource.identifier)
-      {
+      //if (!entry.resource.identifier)
+      //{
          entry.resource.identifier = [ // it's a list of identifiers
             [
                type: [
@@ -180,7 +182,7 @@ final_output_examples.each { example ->
          {
             entry.resource.identifier[0].value = String.randomNumeric(8)
          }
-      }
+      //}
 
       entry.request = [
          method: "PUT",

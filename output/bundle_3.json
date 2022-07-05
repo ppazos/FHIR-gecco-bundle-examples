@@ -1,13 +1,13 @@
 {
     "resourceType": "Bundle",
-    "id": "39f0f325-3616-4cd3-acc2-4a6dbf55c40f",
+    "id": "ce9ceef3-74f0-47c0-beea-31f95e020fd5",
     "meta": {
         "profile": [
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
         ]
     },
     "type": "transaction",
-    "timestamp": "2022-05-26T05:33:16Z",
+    "timestamp": "2022-07-05T01:49:41Z",
     "entry": [
         {
             "resource": {
@@ -62,7 +62,7 @@
                     "text": "Blood pressure"
                 },
                 "subject": {
-                    "reference": "Patient/ebf6c7f0-34de-49ea-b541-98d1206fff6a"
+                    "reference": "Patient/0bc83f65-8ff3-4729-90ef-924f3e979441"
                 },
                 "effectiveDateTime": "2020-09-25",
                 "component": [
@@ -182,7 +182,7 @@
                     "text": "Body temperature"
                 },
                 "subject": {
-                    "reference": "Patient/ebf6c7f0-34de-49ea-b541-98d1206fff6a"
+                    "reference": "Patient/0bc83f65-8ff3-4729-90ef-924f3e979441"
                 },
                 "effectiveDateTime": "2021-04-14",
                 "valueQuantity": {
@@ -259,7 +259,7 @@
                     "text": "Body height"
                 },
                 "subject": {
-                    "reference": "Patient/ebf6c7f0-34de-49ea-b541-98d1206fff6a"
+                    "reference": "Patient/0bc83f65-8ff3-4729-90ef-924f3e979441"
                 },
                 "effectiveDateTime": "2020-10-02",
                 "valueQuantity": {
@@ -277,11 +277,15 @@
         {
             "resource": {
                 "resourceType": "Patient",
-                "id": "ebf6c7f0-34de-49ea-b541-98d1206fff6a",
+                "id": "0bc83f65-8ff3-4729-90ef-924f3e979441",
                 "meta": {
                     "profile": [
                         "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
                     ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>codex_6348Q7</td></tr><tr><td>Date of birth</td><td><span>30 September 1953</span></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -293,6 +297,7 @@
                         }
                     },
                     {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
                         "extension": [
                             {
                                 "url": "dateTimeOfDocumentation",
@@ -307,11 +312,9 @@
                                     "code": "a"
                                 }
                             }
-                        ],
-                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
+                        ]
                     }
                 ],
-                "birthDate": "1953-09-30",
                 "identifier": [
                     {
                         "type": {
@@ -322,14 +325,15 @@
                                 }
                             ]
                         },
-                        "system": "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym",
-                        "value": "28672992"
+                        "system": "http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter",
+                        "value": "To4HKDqqyID1OP7GY6yGUZJGT9D+7NBSMdE01Z6vUuTpUPL7FiEJYioQLBRU7egvI/zWcHMQRcY9emiH/mObFuB4XhqfhmD1pcEWfwgerNgnYxkxyTyy3MI3gDALbxgIioTivOaLnvQELyeropWxBSWnNjbEt6DFC9YA9z9bbyX/VdLG1XlPJKTmQ8e7TPFatmo7VTmTeJczNVbQJDSLWUDzF63eBYS/yusI52tEJDbu1oEjfkwcY9uXlzxfvQ63EA3/D9rIQJt6O/qeCAzfWz+gwr7m3pQj/hGgXJXM6TqfRKYxaJcqTpJjaq8M+WGefXyjc2gWJGL3u1L2ZZPLeA=="
                     }
-                ]
+                ],
+                "birthDate": "1953-09-30"
             },
             "request": {
                 "method": "PUT",
-                "url": "Patient/ebf6c7f0-34de-49ea-b541-98d1206fff6a"
+                "url": "Patient/0bc83f65-8ff3-4729-90ef-924f3e979441"
             }
         }
     ]

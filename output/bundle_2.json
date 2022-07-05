@@ -1,18 +1,18 @@
 {
     "resourceType": "Bundle",
-    "id": "6d85cc0e-c585-46fb-89ce-5954d161e92a",
+    "id": "d6a783e9-694e-47d1-89ba-033dbfe43c95",
     "meta": {
         "profile": [
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
         ]
     },
     "type": "transaction",
-    "timestamp": "2022-07-05T01:00:43Z",
+    "timestamp": "2022-07-05T01:49:38Z",
     "entry": [
         {
             "resource": {
                 "resourceType": "Observation",
-                "id": "2a1e1c87-64f4-490b-912b-d8726b7b5f13",
+                "id": "example-observation-bp-invasive",
                 "meta": {
                     "profile": [
                         "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure"
@@ -59,12 +59,21 @@
                             "display": "Blood pressure (observable entity)"
                         }
                     ],
-                    "text": "Blood pressure"
+                    "text": "Blood pressure invasive"
                 },
                 "subject": {
-                    "reference": "Patient/f7a8dd2f-9576-45ac-9c20-a05849e0f3a0"
+                    "reference": "Patient/b715581d-03a8-420f-a8aa-66a2ad1e44e5"
                 },
-                "effectiveDateTime": "2020-09-25",
+                "effectiveDateTime": "2021-04-14",
+                "method": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "10179008",
+                            "display": "Invasive (qualifier value)"
+                        }
+                    ]
+                },
                 "component": [
                     {
                         "code": {
@@ -75,15 +84,25 @@
                                     "display": "Systolic blood pressure"
                                 },
                                 {
+                                    "system": "http://loinc.org",
+                                    "code": "76215-3",
+                                    "display": "Invasive Systolic blood pressure"
+                                },
+                                {
                                     "system": "http://snomed.info/sct",
                                     "code": "271649006",
                                     "display": "Systolic blood pressure"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "251071003",
+                                    "display": "Invasive systolic arterial pressure (observable entity)"
                                 }
                             ],
-                            "text": "Systolic blood pressure"
+                            "text": "Invasive systolic blood pressure"
                         },
                         "valueQuantity": {
-                            "value": 120,
+                            "value": 136,
                             "unit": "mmHg",
                             "system": "http://unitsofmeasure.org",
                             "code": "mm[Hg]"
@@ -98,15 +117,25 @@
                                     "display": "Diastolic blood pressure"
                                 },
                                 {
+                                    "system": "http://loinc.org",
+                                    "code": "76213-8",
+                                    "display": "Invasive Diastolic blood pressure"
+                                },
+                                {
                                     "system": "http://snomed.info/sct",
                                     "code": "271650006",
                                     "display": "Diastolic blood pressure (observable entity)"
+                                },
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "251073000",
+                                    "display": "Invasive diastolic arterial pressure (observable entity)"
                                 }
                             ],
-                            "text": "Diastolic blood pressure"
+                            "text": "Invasive diastolic blood pressure"
                         },
                         "valueQuantity": {
-                            "value": 80,
+                            "value": 87,
                             "unit": "mmHg",
                             "system": "http://unitsofmeasure.org",
                             "code": "mm[Hg]"
@@ -122,7 +151,7 @@
         {
             "resource": {
                 "resourceType": "Observation",
-                "id": "162918dc-dc70-4767-a6d5-34c7d67e280a",
+                "id": "example-observation-bladder-temperature",
                 "meta": {
                     "profile": [
                         "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature"
@@ -164,22 +193,41 @@
                             "display": "Body temperature"
                         },
                         {
+                            "system": "http://loinc.org",
+                            "code": "8334-5",
+                            "display": "Body temperature - Urinary bladder"
+                        },
+                        {
                             "system": "http://snomed.info/sct",
                             "code": "386725007",
                             "display": "Body temperature (observable entity)"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "698832009",
+                            "display": "Core body temperature measured at urinary bladder (observable entity)"
                         }
                     ],
                     "text": "Body temperature"
                 },
                 "subject": {
-                    "reference": "Patient/f7a8dd2f-9576-45ac-9c20-a05849e0f3a0"
+                    "reference": "Patient/b715581d-03a8-420f-a8aa-66a2ad1e44e5"
                 },
-                "effectiveDateTime": "2020-09-25",
+                "effectiveDateTime": "2021-04-14",
                 "valueQuantity": {
                     "value": 36.8,
                     "unit": "\u00b0C",
                     "system": "http://unitsofmeasure.org",
                     "code": "Cel"
+                },
+                "bodySite": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "89837001",
+                            "display": "Urinary bladder structure (body structure)"
+                        }
+                    ]
                 }
             },
             "request": {
@@ -240,7 +288,7 @@
                     "text": "Body height"
                 },
                 "subject": {
-                    "reference": "Patient/f7a8dd2f-9576-45ac-9c20-a05849e0f3a0"
+                    "reference": "Patient/b715581d-03a8-420f-a8aa-66a2ad1e44e5"
                 },
                 "effectiveDateTime": "2020-10-02",
                 "valueQuantity": {
@@ -258,11 +306,15 @@
         {
             "resource": {
                 "resourceType": "Patient",
-                "id": "f7a8dd2f-9576-45ac-9c20-a05849e0f3a0",
+                "id": "b715581d-03a8-420f-a8aa-66a2ad1e44e5",
                 "meta": {
                     "profile": [
                         "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
                     ]
+                },
+                "text": {
+                    "status": "generated",
+                    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table class=\"hapiPropertyTable\"><tbody><tr><td>Identifier</td><td>codex_6348Q7</td></tr><tr><td>Date of birth</td><td><span>30 September 1953</span></td></tr></tbody></table></div>"
                 },
                 "extension": [
                     {
@@ -274,6 +326,7 @@
                         }
                     },
                     {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
                         "extension": [
                             {
                                 "url": "dateTimeOfDocumentation",
@@ -288,11 +341,9 @@
                                     "code": "a"
                                 }
                             }
-                        ],
-                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age"
+                        ]
                     }
                 ],
-                "birthDate": "1953-09-30",
                 "identifier": [
                     {
                         "type": {
@@ -304,13 +355,14 @@
                             ]
                         },
                         "system": "http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter",
-                        "value": "ZDbkklH0Wgwn6gsBWm9yEKMsa7U4qMeo3ub6RBdwwjfAswafEjhKxdFvhECM53r9s1LqPXoANUrD+Ennovl9ICvtLmHTFkHUSk0M+5y2LwZQzS0Cv+6OuLDdRc9HSiuN6WGrvZcHyuNVESZulJ2SLCbJ04tslKv/U0wFlUcC37k00D49C63LWCr08s7zYCFZ3hoFjyv6CiYTNXdW32VTtqRx7K5+C18QWs28gojbCWMuk47H5AEMdznSohkIzxa/aHvHrwca/A5CtKkYpAyV657ca/zU+vpmmuE7+mnJ8pjKcPiSCp3Z3ugj+w5F5IAKWEHNvarl4G/h/BB0dBJXug=="
+                        "value": "Rd9i2l5iOku6SdyGsymDwIlqisReDsohngM/VodhWe9OceIPun8TImoQ2DO6aKuKOJYxrPGUA+Ye+tai6WvQ/2V6MwAdimA0KsodLKi9JmzESqkYSPzxDt1CN6RLgRoRi6fq+sMTw39cGf0qrbVxv2cvLsDATD69zkvEwQvIz/lM8oxOSXRe6kp7l1Qz+PmatwKjUpkrWfy3NnB6B7HcfN3SfxEckditjoMs60MhCXj+vvUPNu0+dCGvVvAaUdikyRUUMho/Z5P79BOGERRacr3GEyzQ+La/VikKUYL2RDKe1vxqFMOqSlsjKKDuUvCfpN25dSn3tACUO5Fa/xrKHA=="
                     }
-                ]
+                ],
+                "birthDate": "1953-09-30"
             },
             "request": {
                 "method": "PUT",
-                "url": "Patient/f7a8dd2f-9576-45ac-9c20-a05849e0f3a0"
+                "url": "Patient/b715581d-03a8-420f-a8aa-66a2ad1e44e5"
             }
         }
     ]
