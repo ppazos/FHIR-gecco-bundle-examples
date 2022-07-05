@@ -3,15 +3,15 @@ def PS = System.getProperty("file.separator")
 def random = new Random()
 
 // param parsing ============================================================
-def cli = new CliBuilder(usage: 'build_bundle.groovy -wp')
+def cli = new CliBuilder(usage: 'build_bundle.groovy -wp profiles -pid pidfile')
 cli.with {
-   wp longOpt: 'with profiles', args:1, required:true, 'Text file with profile URIs, one per line'
+   wp  longOpt: 'with profiles', args:1, required:true, 'Text file with profile URIs, one per line'
+   pid longOpt: 'patient identifiers', args:1, required:false, 'Text file with patient identifiers, one per line, optional'
 }
 def options = cli.parse(args)
 if (!options) {
    return
 }
-
 
 // class extensions =========================================================
 String.metaClass.static.uuid = { ->
@@ -92,9 +92,9 @@ def rnd_index, final_output_examples = []
 output_examples.each {
 
    //println it.key +" "+ it.value.size()
-   def rnd = random.nextInt(it.value.size())
+   rnd_index = random.nextInt(it.value.size())
    //println rnd
-   final_output_examples << it.value[rnd]
+   final_output_examples << it.value[rnd_index]
 }
 
 
@@ -115,7 +115,31 @@ def bundle_map = [
 ]
 
 // add examples to the bundle map
-def entry, patient_id = String.uuid()
+def entry
+def patient_id = String.uuid() // patient id is generated
+def patient_identifier         // if present will use the bloom filter file
+
+// if patient identifiers file is provided, pick the patient.identifier from there
+if (options.pid)
+{
+   def pid_file = new File(options.pid)
+
+   if (!pid_file.exists()) {
+      println "PID file ${options.pid} doesn't exist"
+      return
+   }
+
+   if (!pid_file.canRead()) {
+      println "PID file ${config.pid} exists but can't be read"
+      return
+   }
+
+   // picks random patient identifier from file
+   def ids = pid_file.readLines()
+   rnd_index = random.nextInt(ids.size())
+   patient_identifier = ids[rnd_index]
+}
+
 final_output_examples.each { example ->
 
    entry = [
@@ -144,12 +168,19 @@ final_output_examples.each { example ->
                      ]
                   ]
                ],
-               system: "http://www.netzwerk-universitaetsmedizin.de/sid/crr-pseudonym"
+               system: "http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter"
             ]
          ]
-      }
 
-      entry.resource.identifier[0].value = String.randomNumeric(8)
+         if (patient_identifier)
+         {
+            entry.resource.identifier[0].value = patient_identifier
+         }
+         else
+         {
+            entry.resource.identifier[0].value = String.randomNumeric(8)
+         }
+      }
 
       entry.request = [
          method: "PUT",

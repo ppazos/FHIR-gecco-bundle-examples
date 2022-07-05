@@ -29,6 +29,26 @@ To store the output in a file:
 
 > $ groovy build_bundle.groovy -wp bundle1_profiles > output.json
 
+## 4. Want to generate multiple outputs?
+
+> $ groovy build_bundle_multiple.groovy -wp bundle1_profies -n 10
+
+This will generate 10 JSON bundles in the `/out` folder. If the `-n` argument is not provided, it will generate 10 by default.
+
+## 5. Using bloom-filter identifiers
+
+Here `identifiers` is a text file containing one patient identifier per line.
+
+> $ groovy build_bundle.groovy -wp bundle1_profiles -pid identifiers
+
+This will generate 1 bundle, print it to the standard output, and the patient.identifier.value will be taken from the `identifiers` file randomly.
+
+> $ groovy build_bundle_multiple.groovy -wp bundle1_profies -n 10 -pid identifiers
+
+This will generate 10 bundles in the `/out` folder, and the patient.identifier.value will be taken from the `identifiers` file randomly for each bundle.
+
+NOTE: the `/debugging_daten_bloomfilter` folder contains many files with identifiers.
+
 ## How this works?
 
 The script uses the references to the profiles to search in the examples folder of the Simplifier Project (https://simplifier.net/forschungsnetzcovid-19).
