@@ -64,23 +64,6 @@ designed_patient_resources.eachFileRecurse (groovy.io.FileType.DIRECTORIES) { pa
 
    parsed_examples = [] // resources for the current patient
 
-   // prepare output
-   bundle_map = [
-      resourceType: "Bundle",
-      id: String.uuid(),
-      meta: [
-         profile: [
-            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
-         ]
-      ],
-      type: "transaction",
-      timestamp: Date.nowInIsoUtc(),
-      entry: [
-
-      ]
-   ]
-
-
    // load resources for the current patient
    patient_folder.eachFileMatch(~/.*.json/) { example_file ->
 
@@ -93,6 +76,22 @@ designed_patient_resources.eachFileRecurse (groovy.io.FileType.DIRECTORIES) { pa
 
       patient_id = String.uuid() // patient id is generated
       patient_identifier = identifiers[patient_index]
+
+      // prepare output
+      bundle_map = [
+         resourceType: "Bundle",
+         id: String.uuid(),
+         meta: [
+            profile: [
+               "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
+            ]
+         ],
+         type: "transaction",
+         timestamp: Date.nowInIsoUtc(),
+         entry: [
+
+         ]
+      ]
 
       // add entries to the output bundle
       parsed_examples.each { example ->
