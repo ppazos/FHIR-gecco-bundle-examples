@@ -1,13 +1,13 @@
 {
     "resourceType": "Bundle",
-    "id": "d7edc97d-f4db-490e-8654-a473f4c25419",
+    "id": "9b4f4530-c41b-4fab-a4f7-a2d1bed3b2b9",
     "meta": {
         "profile": [
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
         ]
     },
     "type": "transaction",
-    "timestamp": "2022-07-29T00:59:06Z",
+    "timestamp": "2022-08-20T22:36:13Z",
     "entry": [
         {
             "resource": {
@@ -53,7 +53,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -114,7 +114,7 @@
                     "text": "SARS-CoV-2 IgG antibodies qualitative"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueCodeableConcept": {
@@ -163,7 +163,7 @@
                     }
                 ],
                 "patient": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "dateTime": "2021-09-01",
                 "policy": [
@@ -234,7 +234,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -295,7 +295,7 @@
                     "text": "SARS-CoV-2 antibodies quantitative"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueQuantity": {
@@ -359,7 +359,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -394,7 +394,7 @@
                     "text": "ACE inhibitors"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -456,7 +456,7 @@
                     "text": "Heart rate"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-25",
                 "valueQuantity": {
@@ -474,7 +474,7 @@
         {
             "resource": {
                 "resourceType": "Patient",
-                "id": "0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e",
+                "id": "5ad9519b-681e-44fe-879b-75ee934d7982",
                 "meta": {
                     "profile": [
                         "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
@@ -498,7 +498,7 @@
                         "extension": [
                             {
                                 "url": "dateTimeOfDocumentation",
-                                "valueDateTime": "2022-07-15"
+                                "valueDateTime": "2022-08-20"
                             },
                             {
                                 "url": "age",
@@ -531,7 +531,7 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                "url": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
             }
         },
         {
@@ -582,7 +582,7 @@
                     "text": "Has the patient participated in one or more interventional clinical trials?"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00",
                 "valueCodeableConcept": {
@@ -649,7 +649,7 @@
                     "text": "Known exposure"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-04",
                 "dataAbsentReason": {
@@ -719,7 +719,7 @@
                     "text": "SARS-CoV-2 IgM antibodies quantitative"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueQuantity": {
@@ -786,7 +786,7 @@
                     "text": "SARS-CoV-2 IgA antibodies quantitative"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueQuantity": {
@@ -845,7 +845,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -885,7 +885,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-26T10:51:48+01:00",
                 "valueCodeableConcept": {
@@ -939,7 +939,7 @@
                     "text": "Ultrasound"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "performedDateTime": "2020-09-30",
                 "bodySite": [
@@ -955,7 +955,7 @@
                 ],
                 "report": [
                     {
-                        "reference": "DiagnosticReport/example"
+                        "reference": "DiagnosticReport/ef35ac3c-da77-42d1-8d6b-284564adad43"
                     }
                 ]
             },
@@ -1017,7 +1017,7 @@
                     "text": "Blood pressure invasive"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2021-04-14",
                 "method": {
@@ -1156,7 +1156,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1218,7 +1218,7 @@
                     "text": "History of travel"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-11-09T12:57:06+01:00",
                 "valueCodeableConcept": {
@@ -1282,7 +1282,7 @@
                     "text": "Pulsoximetrische Sauerstoffs\u00e4ttigung"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-11",
                 "valueQuantity": {
@@ -1345,7 +1345,7 @@
                     "text": "Confirmed Covid-19 diagnosis as main reason for enrolment in the study"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00",
                 "valueCodeableConcept": {
@@ -1417,7 +1417,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1470,7 +1470,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1527,7 +1527,7 @@
                     "text": "Sepsis-related organ failure assessment score"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-11-30T11:04:49+01:00",
                 "valueInteger": 15
@@ -1589,7 +1589,7 @@
                     "text": "SARS-CoV-2 antibodies qualitative"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueCodeableConcept": {
@@ -1663,7 +1663,7 @@
                     "text": "Gas panel - Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "hasMember": [
@@ -1742,7 +1742,7 @@
                     "text": "Body height"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-02",
                 "valueQuantity": {
@@ -1809,7 +1809,7 @@
                     "text": "SARS-CoV-2 IgM antibodies qualitative"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueCodeableConcept": {
@@ -1857,7 +1857,7 @@
                     "text": "ECMO"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -1926,7 +1926,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-23T12:48:23+02:00",
                 "stage": [
@@ -2010,7 +2010,7 @@
                     "text": "SARS-CoV-2 IgG antibodies quantitative"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueQuantity": {
@@ -2056,7 +2056,7 @@
                     "text": "Frailty Scale Score"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-06-16",
                 "valueCodeableConcept": {
@@ -2113,7 +2113,7 @@
                     "text": "Dialysis"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -2155,7 +2155,7 @@
                     "text": "Atazanavir"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "reasonCode": [
@@ -2228,7 +2228,7 @@
                     "text": "Body temperature"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-25",
                 "valueQuantity": {
@@ -2287,7 +2287,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -2349,7 +2349,7 @@
                     "text": "Body weight"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-02",
                 "valueQuantity": {
@@ -2409,7 +2409,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-28T17:01:09+01:00"
             },
@@ -2471,7 +2471,7 @@
                     "text": "Respiratory rate"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-25",
                 "valueQuantity": {
@@ -2534,7 +2534,7 @@
                     "text": "Type of discharge"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00",
                 "valueCodeableConcept": {
@@ -2588,7 +2588,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-30",
                 "conclusion": "COVID-19-typischer Befund",
@@ -2629,7 +2629,7 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "_occurrenceDateTime": {
                     "extension": [
@@ -2701,7 +2701,7 @@
                     "text": "Oxygen [Partial pressure] in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -2772,7 +2772,7 @@
                     "text": "pH of Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -2817,7 +2817,7 @@
                     "text": "Invasive ventilation (Tracheotomy)"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -2874,7 +2874,7 @@
                     "text": "Prone position"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -2942,7 +2942,7 @@
                     "text": "SARS-CoV-2-RNA (PCR)"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00",
                 "valueCodeableConcept": {
@@ -3013,7 +3013,7 @@
                     "text": "Aspartate aminotransferase"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00",
                 "valueQuantity": {
@@ -3084,7 +3084,7 @@
                     "text": "Carbon dioxide [Partial pressure] in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3125,7 +3125,7 @@
                     "text": "Atazanavir"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -3178,7 +3178,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-16T08:49:21+02:00"
             },
@@ -3240,7 +3240,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-15T16:07:48+02:00"
             },
@@ -3275,7 +3275,7 @@
                     "text": "immunoglobulins"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -3336,7 +3336,7 @@
                     "text": "SARS-CoV-2 IgA antibodies qualitative"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueCodeableConcept": {
@@ -3384,7 +3384,7 @@
                     "text": "Apheresis"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -3449,7 +3449,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -3489,7 +3489,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-14",
                 "valueCodeableConcept": {
@@ -3500,6 +3500,69 @@
                             "display": "Yes (qualifier value)"
                         }
                     ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6fa9e2be-d15a-4e77-81fc-056dda521875",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "2708-6_oxygenSaturation",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2708-6",
+                            "display": "Oxygen saturation in Arterial blood"
+                        }
+                    ],
+                    "text": "Oxygen saturation in Arterial blood"
+                },
+                "subject": {
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
+                },
+                "effectiveDateTime": "2020-09-21",
+                "valueQuantity": {
+                    "value": 98,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
                 }
             },
             "request": {
@@ -3563,7 +3626,7 @@
                     "text": "Inhaled oxygen concentration"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3623,7 +3686,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-05"
             },
@@ -3663,7 +3726,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueCodeableConcept": {
@@ -3727,13 +3790,70 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "recordedDate": "2020-10-05"
             },
             "request": {
                 "method": "POST",
                 "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "ef35ac3c-da77-42d1-8d6b-284564adad43",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnostic-report-radiology"
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "18726-0",
+                                "display": "Radiology studies (set)"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "code": "RAD",
+                                "display": "Radiology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "18748-4",
+                            "display": "Diagnostic imaging study"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
+                },
+                "effectiveDateTime": "2020-09-30",
+                "conclusion": "COVID-19-typischer Befund",
+                "conclusionCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "118247008:{363713009=263654008,42752001=840539006}",
+                                "display": "|Radiologic finding (finding)|:{|Has interpretation (attribute)|=|Abnormal (qualifier value)|,|Due to (attribute)|=|Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)|}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
             }
         },
         {
@@ -3788,7 +3908,7 @@
                     "text": "SARS-CoV-2 antibodies panel"
                 },
                 "subject": {
-                    "reference": "Patient/0d46b4a5-0360-42f1-b4fa-8e6fb6f4769e"
+                    "reference": "Patient/5ad9519b-681e-44fe-879b-75ee934d7982"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "hasMember": [

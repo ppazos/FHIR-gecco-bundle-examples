@@ -79,6 +79,29 @@ Note the project also includes another bundle profile (https://simplifier.net/fo
 The output is JSON 'pretty printed'.
 
 
+## Bundle Builder picking sample resources for each patient
+
+### 1. Pick sample resources for each patient
+
+For each profile in the examples, takes one example for each profile, and copies the selected resources to a patient folder, so those resources will be the ones used to generate the bundles for each patient.
+
+See patient data is currently hardcoded, it could be externalized as a config file.
+
+Will output the configuration files in the `patients` folder, creating one subfolder for each patient.
+
+Note that some sample resources have references between them, this script also tries to select the referenced resources so the bundle doesn't have missing references.
+
+
+`$ groovy design_bundles.groovy`
+
+
+For each patient resource folder created by the previous script, takes the blook filter files, and generates the bundles for each patient with each bloom filter. Note bloom filter 0 on all bloom filter files, correspond to patient 0, so the folder for patient 0 will be used to generate as many bundles as bloom filters are available for patient 0. Analogously for patient 1, 2, and so on.
+
+`$ groovy design_build_bundles.groovy`
+
+This will generate the final bundles in the `output` folder, organizing them in subfolders, one for each organization mentioned in the bloom filter files.
+
+
 ## Other utilitary scripts
 
 ### List available profile URLs

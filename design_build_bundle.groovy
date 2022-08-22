@@ -173,7 +173,11 @@ designed_patient_resources.eachFileRecurse (groovy.io.FileType.DIRECTORIES) { pa
 
 
       // output
-      new File('output'+ PS + organization +'_'+ patient_index +'.json') << groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(bundle_map))
+      def out_folder = new File('output')
+      out_folder.mkdirs()
+
+      def out = new File(out_folder, organization +'_'+ patient_index +'.json')
+      out << groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(bundle_map))
    }
 
 
