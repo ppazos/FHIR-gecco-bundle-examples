@@ -1,0 +1,34 @@
+- name: Index
+  filename: Index.guide.md
+- name: Chronic lung diseases
+  filename: Chroniclungdiseases.guide.md
+- name: Disorders of cardiovascular system
+  filename: Disordersofcardiovascularsystem.guide.md
+- name: Chronic liver diseases
+  filename: Chronicliverdiseases.guide.md
+- name: Rheumatological/immunological diseases
+  filename: Rheumatologicalimmunologicaldiseases.guide.md
+- name: Human immunodeficiency virus infection
+  filename: Humanimmunodeficiencyvirusinfection.guide.md
+- name: History of being a tissue or organ recipient
+  filename: Historyofbeingatissueororganrecipient.guide.md
+- name: Diabetes mellitus
+  filename: Diabetesmellitus.guide.md
+- name: Malignant neoplastic diseases
+  filename: Malignantneoplasticdiseases.guide.md
+- name: Tobacco smoking status
+  filename: Tobaccosmokingstatus.guide.md
+- name: Chronic neurological or mental diseases
+  filename: Chronicneurologicalormentaldiseases.guide.md
+- name: Respiratory therapies
+  filename: Respiratorytherapies.guide.md
+- name: Chronic kidney diseases
+  filename: Chronickidneydiseases.guide.md
+- name: History of travel
+  filename: Historyoftravel-duplicate-2.guide.md
+- name: Gastrointestinal ulcers
+  filename: Gastrointestinalulcers.guide.md
+- name: Immunization status
+  filename: Immunizationstatus.guide.md
+- name: Resuscitation status
+  filename: Resuscitationstatus.guide.md

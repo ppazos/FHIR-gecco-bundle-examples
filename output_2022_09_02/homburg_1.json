@@ -1,0 +1,4090 @@
+{
+    "resourceType": "Bundle",
+    "id": "08ae9b15-3393-4288-8d6a-2829625e6ec1",
+    "meta": {
+        "profile": [
+            "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
+        ]
+    },
+    "type": "transaction",
+    "timestamp": "2022-09-03T00:41:37Z",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "chronic-neurological-mental-disease-ho-cer-vas-acc-absent",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-neurological-mental-diseases"
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "refuted",
+                            "display": "Refuted"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410594000",
+                            "display": "Definitely NOT present (qualifier value)"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "394591006",
+                                "system": "http://snomed.info/sct",
+                                "display": "Neurology"
+                            },
+                            {
+                                "code": "394587001",
+                                "system": "http://snomed.info/sct",
+                                "display": "Psychiatry"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "440140008",
+                            "system": "http://snomed.info/sct",
+                            "display": "History of cerebrovascular accident with residual deficit"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "frailty-score-severley-frail",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/frailty-score"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "survey",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "763264000",
+                            "system": "http://snomed.info/sct",
+                            "display": "Canadian Study of Health and Aging Clinical Frailty Scale score"
+                        }
+                    ],
+                    "text": "Frailty Scale Score"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "763264000_FrailtyScaleScore",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-02",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "7",
+                            "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/frailty-score",
+                            "display": "Severely Frail"
+                        }
+                    ]
+                },
+                "method": {
+                    "coding": [
+                        {
+                            "code": "445414007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Canadian Study of Health and Aging clinical frailty scale"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "chronic-kidney-disease-present",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-kidney-diseases"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "394589003",
+                                "system": "http://snomed.info/sct",
+                                "display": "Nephrology (qualifier value)"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confirmed present (qualifier value)"
+                        }
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "709044004",
+                            "system": "http://snomed.info/sct",
+                            "display": "Chronic kidney disease (disorder)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-28T17:01:09+01:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-iga-ser-pl-ql-ia",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-iga-ser-pl-ql-ia"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94562-6_SARS-CoV-2-IgA-Ql",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94562-6",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) IgA Ab [Presence] in Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 IgA antibodies qualitative"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "260373001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Detected (qualifier value)"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "rheumatological-immunological-diseases-vasculitis-absent",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/rheumatological-immunological-diseases"
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "refuted",
+                            "display": "Refuted"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410594000",
+                            "display": "Definitely NOT present (qualifier value)"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "394810000",
+                                "system": "http://snomed.info/sct",
+                                "display": "Rheumatology"
+                            },
+                            {
+                                "code": "408480009",
+                                "system": "http://snomed.info/sct",
+                                "display": "Clinical immunology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "31996006",
+                            "system": "http://snomed.info/sct",
+                            "display": "Vasculitis"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "respiratory-therapy-invasive-vent-tracheostomy-in-progress",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-therapies"
+                    ]
+                },
+                "status": "in-progress",
+                "category": {
+                    "coding": [
+                        {
+                            "code": "277132007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Therapeutic procedure (procedure)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "40617009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Artificial respiration (procedure)"
+                        }
+                    ],
+                    "text": "Invasive ventilation (Tracheotomy)"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "usedCode": [
+                    {
+                        "coding": [
+                            {
+                                "code": "129121000",
+                                "system": "http://snomed.info/sct",
+                                "display": "Tracheostomy tube, device (physical object)"
+                            }
+                        ]
+                    }
+                ],
+                "_performedDateTime": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Patient",
+                "id": "3ed9f9da-8ab3-4234-94dd-eafaf6c06203",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
+                    ]
+                },
+                "extension": [
+                    {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/ethnic-group",
+                        "valueCoding": {
+                            "code": "26242008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Mixed (qualifier value)"
+                        }
+                    },
+                    {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/age",
+                        "extension": [
+                            {
+                                "url": "dateTimeOfDocumentation",
+                                "valueDateTime": "2022-09-02"
+                            },
+                            {
+                                "url": "age",
+                                "valueAge": {
+                                    "value": 32,
+                                    "code": "a",
+                                    "system": "http://unitsofmeasure.org",
+                                    "unit": "years"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "ANON"
+                                }
+                            ]
+                        },
+                        "system": "http://www.netzwerk-universitaetsmedizin.de/sid/bloom-filter",
+                        "value": "RmblD95nuVgP5thBx2+Wo+FpCvX07sAHWvd2Bxzp1cJOAiXCmDM74GhjTGwJKAosqc2N8nWNduAR3UmU19YqCoFfPtyVFmu0fYKcL4zsD0hu1Bqbt905ycEPBTlrdg4jqPQoH99Fp+EUC4Q55ZUTBSzvE5yktqP0E1D01e9bd/08tGPZkzxbCgbnR+V/MKduIjAPBoH9zu4NOx/0rVULOYFzrWC6Ti9Zc0vcoimJIW6vb04p6oMNr/rCoxQ6+x6x2Q1YHTOI/LsXOu/KJhzke3DUATRHapHZ1mw7UoKO6RfJA2RTWp46j+RDDqzn7cAW5Wpj/yIyYUsHnwByjJJKGA=="
+                    }
+                ],
+                "gender": "unknown",
+                "birthDate": "1989-10-20"
+            },
+            "request": {
+                "method": "PUT",
+                "url": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "study-inclusion-covid-19-unknown",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/study-inclusion-covid-19"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "survey",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "02",
+                            "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+                            "display": "Study inclusion due to Covid-19"
+                        }
+                    ],
+                    "text": "Confirmed Covid-19 diagnosis as main reason for enrolment in the study"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "261665006",
+                            "display": "Unknown (qualifier value)"
+                        }
+                    ],
+                    "text": "Unknown if Covid-19 is primary reason for study inclusion"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "ecrf_02_StudyInclusionCovid19",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-16T08:49:21+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "pharmacological-therapy-atazanavir-active",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy"
+                    ]
+                },
+                "status": "active",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "413591007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Product containing atazanavir (medicinal product)"
+                        },
+                        {
+                            "code": "J05AE08",
+                            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                            "display": "Atazanavir"
+                        }
+                    ],
+                    "text": "Atazanavir"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "MedicationStatement"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "pharmacological-therapy-anticoagulants",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-anticoagulants"
+                    ]
+                },
+                "reasonCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "360271000",
+                                "display": "Prophylaxis - procedure intent (qualifier value)"
+                            }
+                        ]
+                    }
+                ],
+                "status": "active",
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "81839001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Medicinal product acting as anticoagulant agent (product)"
+                        },
+                        {
+                            "code": "B01AB01",
+                            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                            "display": "Heparin"
+                        }
+                    ],
+                    "text": "Atazanavir"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "MedicationStatement"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "patient-in-icu-no",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/patient-in-icu"
+                    ]
+                },
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "95420-6",
+                            "system": "http://loinc.org",
+                            "display": "Whether the patient was admitted to intensive care unit (ICU) for condition of interest"
+                        }
+                    ]
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "373067005",
+                            "display": "No (qualifier value)"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "survey",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "display": "Survey"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-14"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "prone-position-unknown",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/prone-position"
+                    ]
+                },
+                "status": "unknown",
+                "category": {
+                    "coding": [
+                        {
+                            "code": "225287004",
+                            "system": "http://snomed.info/sct",
+                            "display": "Procedures relating to positioning and support (procedure)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "431182000",
+                            "system": "http://snomed.info/sct",
+                            "display": "Placing subject in prone position (procedure)"
+                        }
+                    ],
+                    "text": "Prone position"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "_performedDateTime": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-igm-ser-pl-ql-ia",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igm-ser-pl-ql-ia"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94564-2_SARS-CoV-2-IgM-Ql",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94564-2",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) IgM Ab [Presence] in Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 IgM antibodies qualitative"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "260373001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Detected (qualifier value)"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "body-height",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-height"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8302-2",
+                            "system": "http://loinc.org",
+                            "display": "Body height"
+                        },
+                        {
+                            "code": "1153637007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Body height (observable entity)"
+                        }
+                    ],
+                    "text": "Body height"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "value": 167,
+                    "code": "cm",
+                    "unit": "centimeter"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "8302-2_BodyHeight",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-02"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "complication-venous-thrombosis-present",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/complications-covid-19"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "116223007",
+                                "system": "http://snomed.info/sct",
+                                "display": "Complication (disorder)"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "111293003",
+                            "display": "Venous thrombosis (disorder)"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confirmed present (qualifier value)"
+                        }
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-15T16:07:48+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sex-assigned-at-birth-unspecified",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sex-assigned-at-birth"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "display": "Social History"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "76689-9",
+                            "system": "http://loinc.org",
+                            "display": "Sex assigned at birth"
+                        }
+                    ]
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-26T10:51:48+01:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "X",
+                            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+                            "display": "unbestimmt"
+                        }
+                    ],
+                    "text": "Unspecified"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "heart-rate-normal",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/heart-rate"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8867-4",
+                            "system": "http://loinc.org",
+                            "display": "Heart rate"
+                        },
+                        {
+                            "code": "364075005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Heart rate (observable entity)"
+                        }
+                    ],
+                    "text": "Heart rate"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min",
+                    "value": 81,
+                    "unit": "per minute"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "8867-4_HeartRate",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-25"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "symptoms-covid-19-clouded-consciousness-absent",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/symptoms-covid-19"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "75325-1",
+                                "system": "http://loinc.org",
+                                "display": "Symptom"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "40917007",
+                            "display": "Clouded consciousness"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "refuted",
+                            "display": "Refuted"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410594000",
+                            "display": "Definitely NOT present (qualifier value)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-05"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "dialysis-not-done",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dialysis"
+                    ]
+                },
+                "status": "not-done",
+                "category": {
+                    "coding": [
+                        {
+                            "code": "277132007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Therapeutic procedure (procedure)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "108241001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Dialysis procedure (procedure)"
+                        }
+                    ],
+                    "text": "Dialysis"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "_performedDateTime": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "not-performed"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "radiology-procedure-ultrasound-completed",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/radiology-procedures"
+                    ]
+                },
+                "status": "completed",
+                "category": {
+                    "coding": [
+                        {
+                            "code": "103693007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Diagnostic procedure (procedure)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "16310003",
+                            "system": "http://snomed.info/sct",
+                            "display": "Diagnostic ultrasonography (procedure)"
+                        },
+                        {
+                            "code": "US",
+                            "system": "http://dicom.nema.org/resources/ontology/DCM",
+                            "display": "Ultrasound"
+                        }
+                    ],
+                    "text": "Ultrasound"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "performedDateTime": "2020-09-30",
+                "bodySite": [
+                    {
+                        "coding": [
+                            {
+                                "code": "39607008",
+                                "system": "http://snomed.info/sct",
+                                "display": "Lung structure (body structure)"
+                            }
+                        ]
+                    }
+                ],
+                "report": [
+                    {
+                        "reference": "DiagnosticReport/diagnostic-report-radiology-covid-19"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "pharmacological-therapy-immunoglobulins-not-taken",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-immunoglobulins"
+                    ]
+                },
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "333710000",
+                            "system": "http://snomed.info/sct",
+                            "display": "Product containing immunoglobulin (product)"
+                        },
+                        {
+                            "code": "J06B",
+                            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                            "display": "IMMUNGLOBULINE"
+                        }
+                    ],
+                    "text": "immunoglobulins"
+                },
+                "status": "not-taken",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "MedicationStatement"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "respiratory-rate-on-ventilator",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/respiratory-rate"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "9279-1",
+                            "system": "http://loinc.org",
+                            "display": "Respiratory rate"
+                        },
+                        {
+                            "code": "19840-8",
+                            "system": "http://loinc.org",
+                            "display": "Breath rate spontaneous and mechanical --on ventilator"
+                        },
+                        {
+                            "code": "86290005",
+                            "system": "http://snomed.info/sct",
+                            "display": "Respiratory rate (observable entity)"
+                        }
+                    ],
+                    "text": "Respiratory rate on ventilator"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "/min",
+                    "value": 16,
+                    "unit": "per minute"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "9279-1_RespiratoryRate",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2021-04-14"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-igg-ser-pl-ql-ia",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igg-ser-pl-ql-ia"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94563-4_SARS-CoV-2-IgG-Ql",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94563-4",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) IgG Ab [Presence] in Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 IgG antibodies qualitative"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "260373001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Detected (qualifier value)"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-rt-pcr-negative",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94500-6",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
+                        }
+                    ],
+                    "text": "SARS-CoV-2-RNA (PCR)"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-16T08:49:21+02:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "260415000",
+                            "system": "http://snomed.info/sct",
+                            "display": "Not detected (qualifier value)"
+                        }
+                    ],
+                    "text": "SARS-CoV-2-RNA negativ"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "diabetes-mellitus-type-i-absent",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diabetes-mellitus"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "408475000",
+                                "system": "http://snomed.info/sct",
+                                "display": "Diabetic medicine"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "refuted",
+                            "display": "Refuted"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410594000",
+                            "display": "Definitely NOT present (qualifier value)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "46635009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Diabetes mellitus type 1"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-iga-ser-pl-ia-acnc",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-iga-ser-pl-ia-acnc"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94720-0_SARS-CoV-2-IgA-Qn",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94720-0",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) IgA Ab [Units/volume] in Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 IgA antibodies quantitative"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[IU]/mL",
+                    "value": 0.5,
+                    "unit": "[IU]/mL"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sofa-score-1",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sofa-score"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "survey",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "06",
+                            "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+                            "display": "SOFA-Score"
+                        }
+                    ],
+                    "text": "Sepsis-related organ failure assessment score"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "06_SOFA-Score",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-11-30T11:04:49+01:00",
+                "valueInteger": 15
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "smoking-status-smoker",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/smoking-status"
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "72166-2",
+                            "system": "http://loinc.org",
+                            "display": "Tobacco smoking status"
+                        }
+                    ]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "display": "Social History"
+                            }
+                        ]
+                    }
+                ],
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-06",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "LA18976-3",
+                            "system": "http://loinc.org",
+                            "display": "Current every day smoker"
+                        }
+                    ],
+                    "text": "Patient is smoker"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "apheresis-unknown",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/apheresis"
+                    ]
+                },
+                "status": "unknown",
+                "category": {
+                    "coding": [
+                        {
+                            "code": "277132007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Therapeutic procedure (procedure)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "127788007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Apheresis (procedure)"
+                        }
+                    ],
+                    "text": "Apheresis"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "_performedDateTime": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "unknown"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-igm-ser-pl-ia-acnc",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igm-ser-pl-ia-acnc"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94505-5_SARS-CoV-2-IgM-Qn",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94506-3",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 IgM antibodies quantitative"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[arb'U]/mL",
+                    "value": 219.5,
+                    "unit": "[arb'U]/mL"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "diagnostic-report-radiology-covid-19",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnostic-report-radiology"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "18726-0",
+                                "system": "http://loinc.org",
+                                "display": "Radiology studies (set)"
+                            },
+                            {
+                                "code": "RAD",
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "display": "Radiology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18748-4",
+                            "system": "http://loinc.org",
+                            "display": "Diagnostic imaging study"
+                        }
+                    ]
+                },
+                "conclusionCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "118247008:{363713009=263654008,42752001=840539006}",
+                                "display": "|Radiologic finding (finding)|:{|Has interpretation (attribute)|=|Abnormal (qualifier value)|,|Due to (attribute)|=|Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)|}"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-30",
+                "conclusion": "COVID-19-typischer Befund"
+            },
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "MedicationStatement",
+                "id": "pharmacological-therapy-ace-inhibitors-unknown",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pharmacological-therapy-ace-inhibitors"
+                    ]
+                },
+                "medicationCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "41549009",
+                            "system": "http://snomed.info/sct",
+                            "display": "Product containing angiotensin-converting enzyme inhibitor (product)"
+                        },
+                        {
+                            "code": "C09A",
+                            "system": "http://fhir.de/CodeSystem/bfarm/atc",
+                            "display": "ACE-HEMMER, REIN"
+                        }
+                    ],
+                    "text": "ACE inhibitors"
+                },
+                "status": "unknown",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "MedicationStatement"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "history-of-travel-yes",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/history-of-travel"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8691-8",
+                            "system": "http://loinc.org",
+                            "display": "History of Travel"
+                        },
+                        {
+                            "code": "443846001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Detail of history of travel (observable entity)"
+                        }
+                    ],
+                    "text": "History of travel"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "82752-7",
+                                    "system": "http://loinc.org",
+                                    "display": "Date travel started"
+                                }
+                            ],
+                            "text": "Travel start date"
+                        },
+                        "valueDateTime": "2020-09-17"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "94651-7",
+                                    "system": "http://loinc.org",
+                                    "display": "Country of travel"
+                                }
+                            ],
+                            "text": "Country of travel"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "DE",
+                                    "system": "urn:iso:std:iso:3166",
+                                    "display": "Germany"
+                                }
+                            ],
+                            "text": "Germany"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "82754-3",
+                                    "system": "http://loinc.org",
+                                    "display": "State of travel"
+                                }
+                            ],
+                            "text": "State of travel"
+                        },
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "code": "DE-NW",
+                                    "system": "urn:iso:std:iso:3166-2:de",
+                                    "display": "Nordrhein-Westfalen"
+                                }
+                            ],
+                            "text": "Nordrhein-Westfalen"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "94653-3",
+                                    "system": "http://loinc.org",
+                                    "display": "City of travel"
+                                }
+                            ],
+                            "text": "City of travel"
+                        },
+                        "valueString": "Essen"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "91560-3",
+                                    "system": "http://loinc.org",
+                                    "display": "Date of departure from travel destination"
+                                }
+                            ],
+                            "text": "Travel end date"
+                        },
+                        "valueDateTime": "2020-09-19"
+                    }
+                ],
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "8691-8_HistoryOfTravel",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-28",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "373066001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Yes (qualifier value)"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Immunization",
+                "id": "immunization-covid19",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/immunization"
+                    ]
+                },
+                "status": "completed",
+                "vaccineCode": {
+                    "coding": [
+                        {
+                            "code": "1119349007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)"
+                        }
+                    ]
+                },
+                "patient": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "occurrenceDateTime": "2020-12-27",
+                "protocolApplied": [
+                    {
+                        "targetDisease": [
+                            {
+                                "coding": [
+                                    {
+                                        "code": "840539006",
+                                        "system": "http://snomed.info/sct",
+                                        "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+                                    }
+                                ]
+                            }
+                        ],
+                        "_doseNumberString": {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                                    "valueCode": "unknown"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Immunization"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "oxygen-saturation-pulse-oximetry",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "2708-6",
+                            "system": "http://loinc.org",
+                            "display": "Oxygen saturation in Arterial blood"
+                        },
+                        {
+                            "code": "442476006",
+                            "system": "http://snomed.info/sct",
+                            "display": "Arterial oxygen saturation"
+                        },
+                        {
+                            "code": "59408-5",
+                            "system": "http://loinc.org",
+                            "display": "Oxygen saturation in Arterial blood by Pulse oximetry"
+                        },
+                        {
+                            "code": "431314004",
+                            "system": "http://snomed.info/sct",
+                            "display": "Peripheral oxygen saturation"
+                        }
+                    ],
+                    "text": "Pulsoximetrische Sauerstoffs\u00e4ttigung"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%",
+                    "value": 98,
+                    "unit": "%"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-11"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "chronic-liver-disease-present",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-liver-diseases"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "408472002",
+                                "system": "http://snomed.info/sct",
+                                "display": "Hepatology"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confirmed present (qualifier value)"
+                        }
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "328383001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Chronic liver disease"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Consent",
+                "id": "do-not-resuscitate-order-not-for-resuscitation",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/do-not-resuscitate-order"
+                    ]
+                },
+                "scope": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+                            "code": "adr",
+                            "display": "Advanced Care Directive"
+                        }
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+                                "code": "dnr",
+                                "display": "Do Not Resuscitate"
+                            }
+                        ]
+                    }
+                ],
+                "status": "active",
+                "patient": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "dateTime": "2021-09-01",
+                "policy": [
+                    {
+                        "uri": "https://www.aerzteblatt.de/archiv/65440/DNR-Anordnungen-Das-fehlende-Bindeglied"
+                    }
+                ],
+                "provision": {
+                    "code": [
+                        {
+                            "coding": [
+                                {
+                                    "code": "304253006",
+                                    "system": "http://snomed.info/sct",
+                                    "display": "Not for resuscitation"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Consent"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "interventional-clinical-trial-participation-yes-2",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/interventional-clinical-trial-participation"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "survey",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "03",
+                            "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+                            "display": "Participation in interventional clinical trials"
+                        }
+                    ],
+                    "text": "Has the patient participated in one or more interventional clinical trials?"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "373066001",
+                            "display": "Yes (qualifier value)"
+                        }
+                    ],
+                    "text": "Patient is enrolled in other studies"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "ecrf_03_InterventionalClinicalTrialsParticipation",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-16T08:49:21+02:00",
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "04",
+                                    "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+                                    "display": "EudraCT Number"
+                                }
+                            ],
+                            "text": "EudraCT (European Union Drug Regulating Authorities Clinical Trials) registration number"
+                        },
+                        "valueString": "2020-042169-13"
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "05",
+                                    "system": "https://www.netzwerk-universitaetsmedizin.de/fhir/CodeSystem/ecrf-parameter-codes",
+                                    "display": "NCT number"
+                                }
+                            ],
+                            "text": "A unique identification code given to each clinical study registered on ClinicalTrials.gov"
+                        },
+                        "valueString": "NCT00001016"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "e39a18a6-63d7-4117-a38e-1f29be15f6fa",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-partial-pressure"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "2703-7_paO2",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            },
+                            {
+                                "system": "http://loinc.org",
+                                "code": "18767-4"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2703-7",
+                            "display": "Oxygen [Partial pressure] in Arterial blood"
+                        }
+                    ],
+                    "text": "Oxygen [Partial pressure] in Arterial blood"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-21",
+                "valueQuantity": {
+                    "value": 67,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "ac8b697d-7088-4fbe-9ece-51df2d3f1e04",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/pH"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "2744-1_pH",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            },
+                            {
+                                "system": "http://loinc.org",
+                                "code": "18767-4"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2744-1",
+                            "display": "pH of Arterial blood"
+                        }
+                    ],
+                    "text": "pH of Arterial blood"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-21",
+                "valueQuantity": {
+                    "value": 7.4,
+                    "unit": "pH",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[pH]"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "cardiovascular-disease-ho-myocardial-infarction-present",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/cardiovascular-diseases"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "722414000",
+                                "system": "http://snomed.info/sct",
+                                "display": "Vascular medicine"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confirmed present (qualifier value)"
+                        }
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "399211009",
+                            "system": "http://snomed.info/sct",
+                            "display": "History of myocardial infarction (situation)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "diagnosis-covid-19-present",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnosis-covid-19"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "394807007",
+                                "system": "http://snomed.info/sct",
+                                "display": "Infectious diseases (specialty) (qualifier value)"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "840539006",
+                            "system": "http://snomed.info/sct",
+                            "display": "Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confirmed present (qualifier value)"
+                        }
+                    ]
+                },
+                "stage": [
+                    {
+                        "summary": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "24484000",
+                                    "display": "Severe (severity modifier) (qualifier value)"
+                                }
+                            ],
+                            "text": "Critical phase"
+                        },
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "88859-4",
+                                    "display": "Disease stage score for risk calculation"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-23T12:48:23+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "laboratory-ast",
+                "meta": {
+                    "profile": [
+                        "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "30239-8_aspartate-aminotransferase-enzymatic-activity-per-volume-in-serum-or-plasma-by-with-p-5-p",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "value": 34,
+                    "code": "U/L",
+                    "unit": "U/L"
+                },
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "30239-8",
+                            "system": "http://loinc.org",
+                            "display": "Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma by With P-5-P"
+                        }
+                    ],
+                    "text": "Aspartate aminotransferase"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-16T08:49:21+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "gastrointestinal-ulcers-absent",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gastrointestinal-ulcers"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "394584008",
+                                "system": "http://snomed.info/sct",
+                                "display": "Gastroenterology"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "refuted",
+                            "display": "Refuted"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410594000",
+                            "display": "Definitely NOT present (qualifier value)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "40845000",
+                            "system": "http://snomed.info/sct",
+                            "display": "Gastrointestinal ulcer"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "DiagnosticReport",
+                "id": "diagnostic-report-radiology-normal",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/diagnostic-report-radiology"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "18726-0",
+                                "system": "http://loinc.org",
+                                "display": "Radiology studies (set)"
+                            },
+                            {
+                                "code": "RAD",
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+                                "display": "Radiology"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "18748-4",
+                            "system": "http://loinc.org",
+                            "display": "Diagnostic imaging study"
+                        }
+                    ]
+                },
+                "conclusionCode": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://snomed.info/sct",
+                                "code": "118247008:{363713009=17621005}",
+                                "display": "|Radiologic finding (finding)|:|Has interpretation (attribute)|=|Normal (qualifier value)|"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-30",
+                "conclusion": "Normalbefund"
+            },
+            "request": {
+                "method": "POST",
+                "url": "DiagnosticReport"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "dependence-on-ventilator-absent",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/dependence-on-ventilator"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "404989005",
+                                "system": "http://snomed.info/sct",
+                                "display": "Ventilation status (observable entity)"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "444932008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Dependence on ventilator (finding)"
+                        }
+                    ]
+                },
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "refuted",
+                            "display": "Refuted"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410594000",
+                            "display": "Definitely NOT present (qualifier value)"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-16T08:49:21+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6a78560b-2f7c-4af5-a7bc-3c7d62ca8458",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/carbon-dioxide-partial-pressure"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "2019-8_paCO2",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            },
+                            {
+                                "system": "http://loinc.org",
+                                "code": "18767-4"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2019-8",
+                            "display": "Carbon dioxide [Partial pressure] in Arterial blood"
+                        }
+                    ],
+                    "text": "Carbon dioxide [Partial pressure] in Arterial blood"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-21",
+                "valueQuantity": {
+                    "value": 44,
+                    "unit": "mmHg",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mm[Hg]"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "blood-pressure",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-pressure"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "85354-9",
+                            "system": "http://loinc.org",
+                            "display": "Blood pressure panel with all children optional"
+                        },
+                        {
+                            "code": "75367002",
+                            "system": "http://snomed.info/sct",
+                            "display": "Blood pressure (observable entity)"
+                        }
+                    ],
+                    "text": "Blood pressure"
+                },
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "8480-6",
+                                    "system": "http://loinc.org",
+                                    "display": "Systolic blood pressure"
+                                },
+                                {
+                                    "code": "271649006",
+                                    "system": "http://snomed.info/sct",
+                                    "display": "Systolic blood pressure"
+                                }
+                            ],
+                            "text": "Systolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]",
+                            "value": 120,
+                            "unit": "mmHg"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "code": "8462-4",
+                                    "system": "http://loinc.org",
+                                    "display": "Diastolic blood pressure"
+                                },
+                                {
+                                    "code": "271650006",
+                                    "system": "http://snomed.info/sct",
+                                    "display": "Diastolic blood pressure (observable entity)"
+                                }
+                            ],
+                            "text": "Diastolic blood pressure"
+                        },
+                        "valueQuantity": {
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]",
+                            "value": 80,
+                            "unit": "mmHg"
+                        }
+                    }
+                ],
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "85354-9_BloodPressure",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-25"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "BloodGasPanelArterial",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/blood-gas-panel"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "24336-0_gasPanelBldA",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            },
+                            {
+                                "system": "http://loinc.org",
+                                "code": "18767-4"
+                            }
+                        ]
+                    }
+                ],
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "code": "24336-0",
+                            "system": "http://loinc.org",
+                            "display": "Gas panel - Arterial blood"
+                        }
+                    ],
+                    "text": "Gas panel - Arterial blood"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-21",
+                "hasMember": [
+                    {
+                        "reference": "Observation/ac8b697d-7088-4fbe-9ece-51df2d3f1e04"
+                    },
+                    {
+                        "reference": "Observation/6a78560b-2f7c-4af5-a7bc-3c7d62ca8458"
+                    },
+                    {
+                        "reference": "Observation/e39a18a6-63d7-4117-a38e-1f29be15f6fa"
+                    },
+                    {
+                        "reference": "Observation/6fa9e2be-d15a-4e77-81fc-056dda521875"
+                    },
+                    {
+                        "reference": "Observation/c9f96dd3-a77a-4aa9-9b12-43cd1972d9a4"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "body-temperature",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-temperature"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "8310-5",
+                            "system": "http://loinc.org",
+                            "display": "Body temperature"
+                        },
+                        {
+                            "code": "386725007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Body temperature (observable entity)"
+                        }
+                    ],
+                    "text": "Body temperature"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "Cel",
+                    "value": 36.8,
+                    "unit": "\u00b0C"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "8310-5_BodyTemperature",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-25"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "6fa9e2be-d15a-4e77-81fc-056dda521875",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/oxygen-saturation"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "2708-6_oxygenSaturation",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "2708-6",
+                            "display": "Oxygen saturation in Arterial blood"
+                        }
+                    ],
+                    "text": "Oxygen saturation in Arterial blood"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-21",
+                "valueQuantity": {
+                    "value": 98,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "malignant-neoplastic-disease-present",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/malignant-neoplastic-disease"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "394593009",
+                                "system": "http://snomed.info/sct",
+                                "display": "Medical oncology (qualifier value)"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confirmed present (qualifier value)"
+                        }
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "363346000",
+                            "system": "http://snomed.info/sct",
+                            "display": "Malignant neoplastic disease"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "chronic-lung-disease-cystic-fibrosis-absent",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/chronic-lung-diseases"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "418112009",
+                                "system": "http://snomed.info/sct",
+                                "display": "Pulmonary medicine"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "refuted",
+                            "display": "Refuted"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410594000",
+                            "display": "Definitely NOT present (qualifier value)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "190905008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Cystic fibrosis"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "known-exposure-unknown",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/known-exposure"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "88636-6",
+                            "system": "http://loinc.org",
+                            "display": "Known exposure [Identifier]"
+                        }
+                    ],
+                    "text": "Known exposure"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "88636-6_KnownExposure",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-04",
+                "dataAbsentReason": {
+                    "coding": [
+                        {
+                            "code": "unknown",
+                            "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+                            "display": "Unknown"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "c9f96dd3-a77a-4aa9-9b12-43cd1972d9a4",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/inhaled-oxygen-concentration"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "3150-0_FiO2",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            },
+                            {
+                                "system": "http://loinc.org",
+                                "code": "18767-4"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "3150-0",
+                            "display": "Inhaled oxygen concentration"
+                        }
+                    ],
+                    "text": "Inhaled oxygen concentration"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-09-21",
+                "valueQuantity": {
+                    "value": 21,
+                    "unit": "%",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "%"
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-ab-ser-pl-ia-acnc",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ia-acnc"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94769-7_SARS-CoV-2-Ab-Qn",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94769-7",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 antibodies quantitative"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[IU]/mL",
+                    "value": 240,
+                    "unit": "[IU]/mL"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-ab-panel-ser-pl-ia",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-pnl-ser-pl-ia"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94504-8_SARS-CoV-2-Ab-Panel",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94504-8",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 antibodies panel"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
+                "hasMember": [
+                    {
+                        "reference": "Observation/sars-cov-2-ab-ser-pl-ia-acnc"
+                    },
+                    {
+                        "reference": "Observation/sars-cov-2-ab-ser-pl-ql-ia"
+                    },
+                    {
+                        "reference": "Observation/sars-cov-2-igg-ser-pl-ia-acnc"
+                    },
+                    {
+                        "reference": "Observation/sars-cov-2-igg-ser-pl-ql-ia"
+                    },
+                    {
+                        "reference": "Observation/sars-cov-2-igm-ser-pl-ia-acnc"
+                    },
+                    {
+                        "reference": "Observation/sars-cov-2-igm-ser-pl-ql-ia"
+                    },
+                    {
+                        "reference": "Observation/sars-cov-2-iga-ser-pl-ia-acnc"
+                    },
+                    {
+                        "reference": "Observation/sars-cov-2-iga-ser-pl-ql-ia"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "body-weight",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/body-weight"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "vital-signs",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "29463-7",
+                            "system": "http://loinc.org",
+                            "display": "Body weight"
+                        },
+                        {
+                            "code": "27113001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Body weight (observable entity)"
+                        }
+                    ],
+                    "text": "Body weight"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "value": 84,
+                    "code": "kg",
+                    "unit": "kilogram"
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "29463-7_BodyWeight",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-02"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "history-of-organ-recipient-unknown",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/organ-recipient"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "788415003",
+                                "system": "http://snomed.info/sct",
+                                "display": "Transplant medicine"
+                            }
+                        ]
+                    }
+                ],
+                "modifierExtension": [
+                    {
+                        "url": "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/uncertainty-of-presence",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://snomed.info/sct",
+                                    "code": "261665006",
+                                    "display": "Unknown (qualifier value)"
+                                }
+                            ],
+                            "text": "Presence of condition is unknown."
+                        }
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "161663000",
+                            "system": "http://snomed.info/sct",
+                            "display": "History of being a tissue or organ recipient"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-05"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Procedure",
+                "id": "extracorporeal-membrane-oxygenation-not-done",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/extracorporeal-membrane-oxygenation"
+                    ]
+                },
+                "status": "not-done",
+                "category": {
+                    "coding": [
+                        {
+                            "code": "277132007",
+                            "system": "http://snomed.info/sct",
+                            "display": "Therapeutic procedure (procedure)"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "233573008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Extracorporeal membrane oxygenation (procedure)"
+                        }
+                    ],
+                    "text": "ECMO"
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "_performedDateTime": {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                            "valueCode": "not-performed"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Procedure"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Condition",
+                "id": "human-immunodeficiency-virus-infection-present",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/human-immunodeficiency-virus-infection"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "394807007",
+                                "system": "http://snomed.info/sct",
+                                "display": "Infectious diseases (specialty)"
+                            }
+                        ]
+                    }
+                ],
+                "verificationStatus": {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+                            "code": "confirmed",
+                            "display": "Confirmed"
+                        },
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "410605003",
+                            "display": "Confirmed present (qualifier value)"
+                        }
+                    ]
+                },
+                "clinicalStatus": {
+                    "coding": [
+                        {
+                            "code": "active",
+                            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+                            "display": "Active"
+                        }
+                    ]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "code": "86406008",
+                            "system": "http://snomed.info/sct",
+                            "display": "Human immunodeficiency virus infection"
+                        }
+                    ]
+                },
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "recordedDate": "2020-10-06"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Condition"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-igg-ser-pl-ia-acnc",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igg-ser-pl-ia-acnc"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94505-5_SARS-CoV-2-IgG-Qn",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94505-5",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 IgG antibodies quantitative"
+                },
+                "valueQuantity": {
+                    "system": "http://unitsofmeasure.org",
+                    "code": "[arb'U]/mL",
+                    "value": 20,
+                    "unit": "[arb'U]/mL"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "sars-cov-2-ab-ser-pl-ql-ia",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ql-ia"
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "OBI"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
+                        "value": "94762-2_SARS-CoV-2-Ab-Ql",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://loinc.org",
+                                "code": "26436-6"
+                            },
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "laboratory"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "94762-2",
+                            "system": "http://loinc.org",
+                            "display": "SARS-CoV-2 (COVID-19) Ab [Presence] in Serum or Plasma by Immunoassay"
+                        }
+                    ],
+                    "text": "SARS-CoV-2 antibodies qualitative"
+                },
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "code": "260373001",
+                            "system": "http://snomed.info/sct",
+                            "display": "Detected (qualifier value)"
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Observation",
+                "id": "discharge-disposition-referral",
+                "meta": {
+                    "profile": [
+                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/discharge-disposition"
+                    ]
+                },
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "code": "social-history",
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "code": "55128-3",
+                            "system": "http://loinc.org",
+                            "display": "Discharge disposition"
+                        }
+                    ],
+                    "text": "Type of discharge"
+                },
+                "valueCodeableConcept": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "3457005",
+                            "display": "Patient referral (procedure)"
+                        }
+                    ]
+                },
+                "identifier": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "code": "OBI",
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+                                }
+                            ]
+                        },
+                        "system": "https://www.charite.de/fhir/CodeSystem/observation-identifiers",
+                        "value": "55128-3_DischargeDisposition",
+                        "assigner": {
+                            "reference": "Organization/Charit\u00e9"
+                        }
+                    }
+                ],
+                "status": "final",
+                "subject": {
+                    "reference": "Patient/3ed9f9da-8ab3-4234-94dd-eafaf6c06203"
+                },
+                "effectiveDateTime": "2020-10-16T08:49:21+02:00"
+            },
+            "request": {
+                "method": "POST",
+                "url": "Observation"
+            }
+        }
+    ]
+}

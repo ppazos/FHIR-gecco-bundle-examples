@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.guide.md
+- name: Transaction Bundle
+  filename: TransactionBundle.guide.md
+- name: Patient
+  filename: Patient.guide.md
+- name: Consent
+  filename: Consent.guide.md

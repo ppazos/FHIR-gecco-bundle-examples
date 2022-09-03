@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.guide.md
+- name: Laboratory value
+  filename: Laboratoryvalue.guide.md
+- name: SARS-CoV-2-RT-PCR
+  filename: SARS-CoV-2-RT-PCR.guide.md
+- name: SARS-CoV-2 antibodies
+  filename: SARS-CoV-2antibodies.guide.md

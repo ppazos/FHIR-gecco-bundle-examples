@@ -1,0 +1,28 @@
+- name: Index
+  filename: Index.guide.md
+- name: Anamnesis / Risk factors
+  filename: AnamnesisRiskfactors
+- name: Imaging
+  filename: Imaging
+- name: Demographics
+  filename: Demographics
+- name: Epidemiological factors
+  filename: Epidemiologicalfactors
+- name: Complications
+  filename: Complications
+- name: Onset of illness / Admission
+  filename: OnsetofillnessAdmission
+- name: Laboratory values
+  filename: Laboratoryvalues
+- name: Medication
+  filename: Medication
+- name: Outcome at discharge
+  filename: Outcomeatdischarge
+- name: Study enrollment / Inclusion criteria
+  filename: StudyenrollmentInclusioncriteria
+- name: Symptoms
+  filename: Symptoms
+- name: Therapy
+  filename: Therapy
+- name: Vital signs
+  filename: Vitalsigns

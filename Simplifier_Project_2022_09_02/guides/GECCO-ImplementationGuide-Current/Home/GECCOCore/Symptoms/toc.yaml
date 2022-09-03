@@ -1,0 +1,4 @@
+- name: Index
+  filename: Index.guide.md
+- name: Symptom
+  filename: Symptom.guide.md
