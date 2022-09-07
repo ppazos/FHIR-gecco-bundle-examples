@@ -1,13 +1,13 @@
 {
     "resourceType": "Bundle",
-    "id": "417335fa-e0f4-4726-9c87-19a794dd7cc4",
+    "id": "368d2501-be9d-4f1c-bdcc-3d9c2e9da369",
     "meta": {
         "profile": [
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
         ]
     },
     "type": "transaction",
-    "timestamp": "2022-09-03T00:41:39Z",
+    "timestamp": "2022-09-07T00:50:46Z",
     "entry": [
         {
             "resource": {
@@ -62,7 +62,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -106,7 +106,7 @@
                     "text": "Chest x-ray"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "performedDateTime": "2020-09-30",
                 "bodySite": [
@@ -179,7 +179,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-02",
                 "valueCodeableConcept": {
@@ -258,7 +258,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueCodeableConcept": {
@@ -321,7 +321,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-05"
             },
@@ -333,7 +333,7 @@
         {
             "resource": {
                 "resourceType": "Patient",
-                "id": "f29171ee-f223-4f88-9830-c03ceb51277a",
+                "id": "c9d1a6e7-2df1-4163-9bc6-2c77811ebe39",
                 "meta": {
                     "profile": [
                         "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
@@ -353,7 +353,7 @@
                         "extension": [
                             {
                                 "url": "dateTimeOfDocumentation",
-                                "valueDateTime": "2022-09-02"
+                                "valueDateTime": "2022-09-06"
                             },
                             {
                                 "url": "age",
@@ -386,7 +386,7 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                "url": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
             }
         },
         {
@@ -429,7 +429,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-14"
             },
@@ -469,7 +469,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueCodeableConcept": {
@@ -532,7 +532,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -594,7 +594,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -629,7 +629,7 @@
                     "text": "Atazanavir"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -682,7 +682,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -745,7 +745,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-21"
             },
@@ -799,7 +799,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -845,7 +845,7 @@
                     "text": "Atazanavir"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -911,7 +911,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-04"
             },
@@ -946,7 +946,7 @@
                 },
                 "status": "unknown",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -1013,7 +1013,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1052,7 +1052,7 @@
                     "text": "ECMO"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -1120,7 +1120,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueCodeableConcept": {
@@ -1197,7 +1197,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-02"
             },
@@ -1265,7 +1265,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-25"
             },
@@ -1338,7 +1338,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2021-04-14"
             },
@@ -1399,7 +1399,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "valueCodeableConcept": {
@@ -1470,7 +1470,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-15T16:07:48+02:00"
             },
@@ -1531,7 +1531,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00",
                 "valueCodeableConcept": {
@@ -1595,7 +1595,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1634,7 +1634,7 @@
                     "text": "Dialysis"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -1707,7 +1707,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00"
             },
@@ -1774,7 +1774,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -1831,7 +1831,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-11-30T11:04:49+01:00",
                 "valueInteger": 15
@@ -1899,7 +1899,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -1937,7 +1937,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -2000,7 +2000,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-30",
                 "conclusion": "COVID-19-typischer Befund"
@@ -2148,7 +2148,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-28",
                 "valueCodeableConcept": {
@@ -2196,7 +2196,7 @@
                     "text": "Prone position"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -2256,7 +2256,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-28T17:01:09+01:00"
             },
@@ -2296,7 +2296,7 @@
                 ],
                 "status": "active",
                 "patient": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "dateTime": "2021-09-01",
                 "policy": [
@@ -2367,7 +2367,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-05"
             },
@@ -2407,7 +2407,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-26T10:51:48+01:00",
                 "valueCodeableConcept": {
@@ -2482,7 +2482,7 @@
                     "text": "Oxygen [Partial pressure] in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -2553,7 +2553,7 @@
                     "text": "pH of Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -2621,7 +2621,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -2679,7 +2679,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -2708,7 +2708,7 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "_occurrenceDateTime": {
                     "extension": [
@@ -2800,7 +2800,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-23T12:48:23+02:00"
             },
@@ -2853,7 +2853,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "recordedDate": "2020-10-16T08:49:21+02:00"
             },
@@ -2918,7 +2918,7 @@
                     "text": "Carbon dioxide [Partial pressure] in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3034,7 +3034,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-25"
             },
@@ -3099,7 +3099,7 @@
                     "text": "Gas panel - Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "hasMember": [
@@ -3184,7 +3184,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-25"
             },
@@ -3251,7 +3251,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00",
                 "component": [
@@ -3323,7 +3323,7 @@
                     "text": "Oxygen saturation in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3394,7 +3394,7 @@
                     "text": "Inhaled oxygen concentration"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3467,7 +3467,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00"
             },
@@ -3534,7 +3534,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -3595,15 +3595,12 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00",
                 "hasMember": [
                     {
                         "reference": "Observation/sars-cov-2-ab-ser-pl-ia-acnc"
-                    },
-                    {
-                        "reference": "Observation/sars-cov-2-ab-ser-pl-ql-ia"
                     },
                     {
                         "reference": "Observation/sars-cov-2-igg-ser-pl-ia-acnc"
@@ -3689,7 +3686,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-02"
             },
@@ -3724,7 +3721,7 @@
                 },
                 "status": "active",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -3763,7 +3760,7 @@
                     "text": "Apheresis"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -3837,79 +3834,9 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-ab-ser-pl-ql-ia",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ql-ia"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94762-2_SARS-CoV-2-Ab-Ql",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94762-2",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) Ab [Presence] in Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 antibodies qualitative"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "260373001",
-                            "system": "http://snomed.info/sct",
-                            "display": "Detected (qualifier value)"
-                        }
-                    ]
-                }
             },
             "request": {
                 "method": "POST",
@@ -3974,7 +3901,7 @@
                     "text": "CRP"
                 },
                 "subject": {
-                    "reference": "Patient/f29171ee-f223-4f88-9830-c03ceb51277a"
+                    "reference": "Patient/c9d1a6e7-2df1-4163-9bc6-2c77811ebe39"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00"
             },
