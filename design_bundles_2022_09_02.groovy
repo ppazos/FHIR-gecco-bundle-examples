@@ -7,6 +7,12 @@ def json_slurper = new groovy.json.JsonSlurper()
 def parsed_examples = [] // profiel => example list
 def parsed_example
 
+// class extensions =========================================================
+String.metaClass.static.uuid = { ->
+   java.util.UUID.randomUUID() as String
+}
+
+
 // metadata
 
 // patient resource that will be used as the base to generate multiple patient data (10)
@@ -41,6 +47,8 @@ examples_folder.eachFileMatch(~/.*.json/) { example_file ->
 // group examples by profile: profile => examples already parsed!
 def profile_examples = parsed_examples.groupBy { it.meta.profile[0] }
 
+//println profile_examples.keySet()
+
 
 
 // metadata to generate instances of the patient resource
@@ -64,7 +72,13 @@ def patient_index = 0
 def patient_output_folder, example_pick, example_output_file
 def examples_picked // examples chosen for each patient, used to check for references and include them too
 
+
+
 patients_meta.trim().splitEachLine(",") { row ->
+
+   // util to resolve references to a fullUrl
+   def new_old_reference_map = [:] // urn:uuid:123 => Obs/123
+
    //println row
 
    // load resource that will be used as template for all patients
@@ -115,6 +129,7 @@ patients_meta.trim().splitEachLine(",") { row ->
 
       example_pick = examples[profile_example_counter[profile]] // parsed example
 
+      // FIXME: before output should fix the references and ids...
       output(patient_index, example_pick, examples)
 
       examples_picked << example_pick
@@ -124,7 +139,7 @@ patients_meta.trim().splitEachLine(",") { row ->
    }
 
    // resolve references
-   def references = []
+   def reference_value, included_resource, referenced_resource
    examples_picked.each { example ->
 
       if (example.resourceType == 'Observation')
@@ -134,18 +149,68 @@ patients_meta.trim().splitEachLine(",") { row ->
             // hasMember is an array of references
             example.hasMember.each { ref ->
 
-               def included_resource = get_resource_by_ref(examples_picked, ref.reference)
+               reference_value = ref.reference
+
+               included_resource = get_resource_by_ref(examples_picked, reference_value)
+
+               if (reference_value.contains('urn'))
+               {
+                  if (new_old_reference_map[reference_value])
+                  {
+                     included_resource = get_resource_by_ref(examples_picked, new_old_reference_map[reference_value])
+                  }
+
+                  // the included resource already has an updated id
+                  if (!included_resource)
+                  {
+                     included_resource = get_resource_by_ref(examples_picked, reference_value)
+                  }
+                  else // container has urn and referenced doesn't, updated referenced
+                  {
+                     included_resource.id = reference_value
+                  }
+               }
+               else // Proc/123 => urn:uuid:123
+               {
+                  included_resource = get_resource_by_ref(examples_picked, reference_value)
+
+                  ref.reference = 'urn:uuid:'+ String.uuid() //reference_value.split("/")[1]
+                  new_old_reference_map[ref.reference] = reference_value
+               }
+
+               //println ref.reference
+               //println reference_value
 
                if (!included_resource)
                {
-                  def referenced_resource = get_resource_by_ref(parsed_examples, ref.reference)
+                  if (reference_value.contains('urn'))
+                  {
+                     // referenced resource doesn't have an updated id
+                     if (new_old_reference_map[reference_value])
+                     {
+                        referenced_resource = get_resource_by_ref(parsed_examples, new_old_reference_map[reference_value])
+                     }
+
+                     // the referenced resource already has an updated id
+                     if (!referenced_resource)
+                     {
+                        referenced_resource = get_resource_by_ref(parsed_examples, reference_value)
+                     }
+                  }
+                  else
+                  {
+                     referenced_resource = get_resource_by_ref(parsed_examples, reference_value)
+                  }
 
                   if (!referenced_resource)
                   {
-                     println "missing 1 $ref.reference"
+                     println "missing 1 ${reference_value}"
                   }
-
-                  output(patient_index, referenced_resource, parsed_examples)
+                  else
+                  {
+                     referenced_resource.id = ref.reference // with urn:uuid:123
+                     output(patient_index, referenced_resource, parsed_examples)
+                  }
                }
             }
          }
@@ -154,29 +219,89 @@ patients_meta.trim().splitEachLine(",") { row ->
       {
          if (example.report)
          {
+            // report has an array of references
             example.report.each { ref ->
 
-               def included_resource = get_resource_by_ref(examples_picked, ref.reference)
+               reference_value = ref.reference
+               
+               if (reference_value.contains('urn'))
+               {
+                  if (new_old_reference_map[reference_value])
+                  {
+                     included_resource = get_resource_by_ref(examples_picked, new_old_reference_map[reference_value])
+                  }
+
+                  // the included resource already has an updated id
+                  if (!included_resource)
+                  {
+                     included_resource = get_resource_by_ref(examples_picked, reference_value)
+                  }
+                  else // container has urn and referenced doesn't, updated referenced
+                  {
+                     println "modified included_resource ${included_resource.id} => ${reference_value}"
+                     included_resource.id = reference_value
+                  }
+               }
+               else // Proc/123 => urn:uuid:123
+               {
+                  included_resource = get_resource_by_ref(examples_picked, reference_value)
+
+                  ref.reference = 'urn:uuid:'+ String.uuid() //reference_value.split("/")[1]
+                  new_old_reference_map[ref.reference] = reference_value
+               }
+
+               //println ref.reference
+               //println reference_value
 
                if (!included_resource)
                {
-                  def referenced_resource = get_resource_by_ref(parsed_examples, ref.reference)
+                  if (reference_value.contains('urn'))
+                  {
+                     println "ref_value has urn"
+                     // referenced resource doesn't have an updated id
+                     if (new_old_reference_map[reference_value])
+                     {
+                        referenced_resource = get_resource_by_ref(parsed_examples, new_old_reference_map[reference_value])
+                     }
+
+                     // the referenced resource already has an updated id
+                     if (!referenced_resource)
+                     {
+                        referenced_resource = get_resource_by_ref(parsed_examples, reference_value)\
+                     }
+                  }
+                  else
+                  {
+                     println "ref_value doesn't have urn"
+                     referenced_resource = get_resource_by_ref(parsed_examples, reference_value)
+                  }
 
                   if (!referenced_resource)
                   {
-                     println "missing 2 $ref.reference"
+                     println "missing 2 ${reference_value}"
+                     //println parsed_examples*.id
+                     println new_old_reference_map
                   }
+                  else
+                  {
+                     println "modified referenced_resource ${referenced_resource.id} => ${ref.reference}"
+                     referenced_resource.id = ref.reference // with urn:uuid:123
+                     output(patient_index, referenced_resource, parsed_examples)
 
-                  output(patient_index, referenced_resource, parsed_examples)
+                     println parsed_examples*.id
+                  }
                }
             }
          }
       }
    }
+   println "-"
 
 
    // output patient resource
-   patient_output_folder = new File("patients_2022_09_02${PS}patient_${patient_index}")
+   patient_output_folder = new File("patients_2022_10_20${PS}patient_${patient_index}")
+   //patient_output_folder.mkdirs()
+
    example_output_file = new File(patient_output_folder, "patient.json")
    example_output_file << groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(patient_resource))
 
@@ -186,9 +311,21 @@ patients_meta.trim().splitEachLine(",") { row ->
 
 def get_resource_by_ref(parsed_examples, ref)
 {
-   def type_id = ref.split("/")
+   def res
+   if (ref.contains('urn'))
+   {
+      //println "get_resource_by_ref 1"
+      res = parsed_examples.find { it.id == ref }
+   }
+   else
+   {
+      //println "get_resource_by_ref 2"
+      def type_id = ref.split("/")
 
-   parsed_examples.find { it.resourceType == type_id[0] && it.id == type_id[1] }
+      res = parsed_examples.find { it.resourceType == type_id[0] && it.id == type_id[1] }
+   }
+
+   return res
 }
 
 def output(patient_index, example, examples)
@@ -200,7 +337,7 @@ def output(patient_index, example, examples)
    profile = example.meta.profile[0]
 
    // prepare output
-   patient_output_folder = new File("patients_2022_09_02${PS}patient_${patient_index}")
+   patient_output_folder = new File("patients_2022_10_20${PS}patient_${patient_index}")
    patient_output_folder.mkdirs()
 
    example_output_file = new File(patient_output_folder, example.id +".json")

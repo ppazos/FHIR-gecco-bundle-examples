@@ -58,19 +58,19 @@
   "effectiveDateTime": "2020-09-21",
   "hasMember": [
     {
-      "reference": "Observation/ac8b697d-7088-4fbe-9ece-51df2d3f1e04"
+      "reference": "urn:uuid:ac8b697d-7088-4fbe-9ece-51df2d3f1e04"
     },
     {
-      "reference": "Observation/6a78560b-2f7c-4af5-a7bc-3c7d62ca8458"
+      "reference": "urn:uuid:6a78560b-2f7c-4af5-a7bc-3c7d62ca8458"
     },
     {
-      "reference": "Observation/e39a18a6-63d7-4117-a38e-1f29be15f6fa"
+      "reference": "urn:uuid:e39a18a6-63d7-4117-a38e-1f29be15f6fa"
     },
     {
-      "reference": "Observation/6fa9e2be-d15a-4e77-81fc-056dda521875"
+      "reference": "urn:uuid:6fa9e2be-d15a-4e77-81fc-056dda521875"
     },
     {
-      "reference": "Observation/c9f96dd3-a77a-4aa9-9b12-43cd1972d9a4"
+      "reference": "urn:uuid:c9f96dd3-a77a-4aa9-9b12-43cd1972d9a4"
     }
   ]
 }

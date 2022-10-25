@@ -54,25 +54,25 @@
   "effectiveDateTime": "2020-10-19T08:43:33+02:00",
   "hasMember": [
     {
-      "reference": "Observation/sars-cov-2-ab-ser-pl-ia-acnc"
+      "reference": "urn:uuid:09120d9b-3b46-406e-9bf1-5dc403ca80cf"
     },
     {
-      "reference": "Observation/sars-cov-2-igg-ser-pl-ia-acnc"
+      "reference": "urn:uuid:085cb4fe-360d-4d54-bd21-2266374b1452"
     },
     {
-      "reference": "Observation/sars-cov-2-igg-ser-pl-ql-ia"
+      "reference": "urn:uuid:970db9ed-96b9-40c8-9fbe-b0e1fc1ab22e"
     },
     {
-      "reference": "Observation/sars-cov-2-igm-ser-pl-ia-acnc"
+      "reference": "urn:uuid:62f96b4b-36c8-4985-9db3-01653c8a53eb"
     },
     {
-      "reference": "Observation/sars-cov-2-igm-ser-pl-ql-ia"
+      "reference": "urn:uuid:c9f73b90-db0b-47d7-b6cb-a83b489da51"
     },
     {
-      "reference": "Observation/sars-cov-2-iga-ser-pl-ia-acnc"
+      "reference": "urn:uuid:e42fb8b8-fcbb-4d5b-a984-5b093343acd2"
     },
     {
-      "reference": "Observation/sars-cov-2-iga-ser-pl-ql-ia"
+      "reference": "urn:uuid:2a9a7817-dc1a-4596-95d4-2b22e97d08db"
     }
   ]
 }

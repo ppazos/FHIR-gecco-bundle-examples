@@ -33,7 +33,7 @@ String.metaClass.static.randomNumeric = { digits ->
 
 
 // source examples per patient ======================================================
-def designed_patient_resources = new File('patients_2022_09_02')
+def designed_patient_resources = new File('patients_2022_10_20')
 
 if (!designed_patient_resources.exists()) {
    println "Please run first: groovy design_bundles.groovy"
@@ -168,12 +168,13 @@ designed_patient_resources.eachFileRecurse (groovy.io.FileType.DIRECTORIES) { pa
             println "ERROR: resource ${type} doesn't have a patient attribute configuration"
          }
 
-         bundle_entry.resource."$patient_attribute".reference = "Patient/${patient_id}"
+         //bundle_entry.resource."$patient_attribute".reference = "Patient/${patient_id}"
+         bundle_entry.resource."$patient_attribute".reference = "urn:uuid:${patient_id}"
       }
 
 
       // output
-      def out_folder = new File('output_2022_09_02')
+      def out_folder = new File('output_2022_10_20')
       out_folder.mkdirs()
 
       def out = new File(out_folder, organization +'_'+ patient_index +'.json')

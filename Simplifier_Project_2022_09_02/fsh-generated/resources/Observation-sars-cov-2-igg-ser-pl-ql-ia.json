@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "sars-cov-2-igg-ser-pl-ql-ia",
+  "id": "970db9ed-96b9-40c8-9fbe-b0e1fc1ab22e",
   "meta": {
     "profile": [
       "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igg-ser-pl-ql-ia"

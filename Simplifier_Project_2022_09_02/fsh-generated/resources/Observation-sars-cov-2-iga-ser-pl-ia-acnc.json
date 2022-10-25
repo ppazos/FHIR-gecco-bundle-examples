@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "sars-cov-2-iga-ser-pl-ia-acnc",
+  "id": "e42fb8b8-fcbb-4d5b-a984-5b093343acd2",
   "meta": {
     "profile": [
       "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-iga-ser-pl-ia-acnc"

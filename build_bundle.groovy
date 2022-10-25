@@ -223,7 +223,8 @@ bundle_map.entry.each { bundle_entry ->
       println "ERROR: resource ${type} doesn't have a patient attribute configuration"
    }
 
-   bundle_entry.resource."$patient_attribute".reference = "Patient/${patient_id}"
+   //bundle_entry.resource."$patient_attribute".reference = "Patient/${patient_id}"
+   bundle_entry.resource."$patient_attribute".reference = "urn:uuid:${patient_id}"
 }
 
 // serialize bundle to JSON

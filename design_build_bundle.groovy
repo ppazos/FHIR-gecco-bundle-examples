@@ -168,7 +168,8 @@ designed_patient_resources.eachFileRecurse (groovy.io.FileType.DIRECTORIES) { pa
             println "ERROR: resource ${type} doesn't have a patient attribute configuration"
          }
 
-         bundle_entry.resource."$patient_attribute".reference = "Patient/${patient_id}"
+         //bundle_entry.resource."$patient_attribute".reference = "Patient/${patient_id}"
+         bundle_entry.resource."$patient_attribute".reference = "urn:uuid:${patient_id}"
       }
 
 
