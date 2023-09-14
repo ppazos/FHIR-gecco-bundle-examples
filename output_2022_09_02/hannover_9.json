@@ -1,13 +1,13 @@
 {
     "resourceType": "Bundle",
-    "id": "39cb3194-3c1f-491f-808e-b5cc3cc2f5ee",
+    "id": "c9bf9df1-9d1c-4414-8caa-aa9fd73f0bde",
     "meta": {
         "profile": [
             "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/gecco-bundle"
         ]
     },
     "type": "transaction",
-    "timestamp": "2022-09-07T00:50:47Z",
+    "timestamp": "2022-09-08T13:50:46Z",
     "entry": [
         {
             "resource": {
@@ -39,7 +39,7 @@
                     "text": "Artificial respiration"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -90,7 +90,7 @@
                     "text": "Chest x-ray"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "performedDateTime": "2020-09-30",
                 "bodySite": [
@@ -145,7 +145,7 @@
                     "text": "Apheresis"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -218,7 +218,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00"
             },
@@ -289,79 +289,9 @@
                     "text": "pH of Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21"
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-iga-ser-pl-ql-ia",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-iga-ser-pl-ql-ia"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94562-6_SARS-CoV-2-IgA-Ql",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94562-6",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) IgA Ab [Presence] in Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 IgA antibodies qualitative"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "260373001",
-                            "system": "http://snomed.info/sct",
-                            "display": "Detected (qualifier value)"
-                        }
-                    ]
-                }
             },
             "request": {
                 "method": "POST",
@@ -426,7 +356,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00",
                 "component": [
@@ -480,7 +410,7 @@
                     "text": "Prone position"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -565,7 +495,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2021-04-14",
                 "bodySite": {
@@ -613,7 +543,7 @@
                     "text": "ECMO"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -691,7 +621,7 @@
                     "text": "Carbon dioxide [Partial pressure] in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21"
             },
@@ -731,7 +661,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-06-16",
                 "valueCodeableConcept": {
@@ -803,7 +733,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-05"
             },
@@ -815,7 +745,7 @@
         {
             "resource": {
                 "resourceType": "Patient",
-                "id": "4932de2e-ce5b-4460-94ca-fc05cacf9cc3",
+                "id": "97523341-6c0d-45b0-a24d-5eb0a621f6f2",
                 "meta": {
                     "profile": [
                         "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/Patient"
@@ -835,7 +765,7 @@
                         "extension": [
                             {
                                 "url": "dateTimeOfDocumentation",
-                                "valueDateTime": "2022-09-06"
+                                "valueDateTime": "2022-09-08"
                             },
                             {
                                 "url": "age",
@@ -868,7 +798,7 @@
             },
             "request": {
                 "method": "PUT",
-                "url": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                "url": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
             }
         },
         {
@@ -911,7 +841,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-14"
             },
@@ -951,7 +881,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueCodeableConcept": {
@@ -1023,7 +953,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1058,7 +988,7 @@
                     "text": "Atazanavir"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -1121,7 +1051,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21"
             },
@@ -1175,7 +1105,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1221,7 +1151,7 @@
                     "text": "Atazanavir"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -1287,7 +1217,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-04"
             },
@@ -1322,7 +1252,7 @@
                 },
                 "status": "unknown",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -1384,7 +1314,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-11-09T12:57:06+01:00",
                 "valueCodeableConcept": {
@@ -1446,7 +1376,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1486,7 +1416,7 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-26T10:51:48+01:00",
                 "valueCodeableConcept": {
@@ -1558,83 +1488,13 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-16T08:49:21+02:00"
             },
             "request": {
                 "method": "POST",
                 "url": "Condition"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-igm-ser-pl-ql-ia",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igm-ser-pl-ql-ia"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94564-2_SARS-CoV-2-IgM-Ql",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94564-2",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) IgM Ab [Presence] in Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 IgM antibodies qualitative"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "260373001",
-                            "system": "http://snomed.info/sct",
-                            "display": "Detected (qualifier value)"
-                        }
-                    ]
-                }
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
             }
         },
         {
@@ -1696,7 +1556,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-02"
             },
@@ -1764,7 +1624,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-25"
             },
@@ -1818,7 +1678,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1872,7 +1732,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -1934,83 +1794,13 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
             "request": {
                 "method": "POST",
                 "url": "Condition"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-igg-ser-pl-ql-ia",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igg-ser-pl-ql-ia"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94563-4_SARS-CoV-2-IgG-Ql",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94563-4",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) IgG Ab [Presence] in Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 IgG antibodies qualitative"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "260373001",
-                            "system": "http://snomed.info/sct",
-                            "display": "Detected (qualifier value)"
-                        }
-                    ]
-                }
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
             }
         },
         {
@@ -2134,7 +1924,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2021-04-14",
                 "method": {
@@ -2146,73 +1936,6 @@
                         }
                     ]
                 }
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-iga-ser-pl-ia-acnc",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-iga-ser-pl-ia-acnc"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94720-0_SARS-CoV-2-IgA-Qn",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94720-0",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) IgA Ab [Units/volume] in Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 IgA antibodies quantitative"
-                },
-                "valueQuantity": {
-                    "system": "http://unitsofmeasure.org",
-                    "code": "[IU]/mL",
-                    "value": 0.5,
-                    "unit": "[IU]/mL"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
             "request": {
                 "method": "POST",
@@ -2264,7 +1987,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-15T16:07:48+02:00"
             },
@@ -2321,77 +2044,10 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-11-30T11:04:49+01:00",
                 "valueInteger": 15
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-igm-ser-pl-ia-acnc",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igm-ser-pl-ia-acnc"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94505-5_SARS-CoV-2-IgM-Qn",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94506-3",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) IgM Ab [Units/volume] in Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 IgM antibodies quantitative"
-                },
-                "valueQuantity": {
-                    "system": "http://unitsofmeasure.org",
-                    "code": "[arb'U]/mL",
-                    "value": 219.5,
-                    "unit": "[arb'U]/mL"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
             "request": {
                 "method": "POST",
@@ -2445,7 +2101,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-30",
                 "conclusion": "COVID-19-typischer Befund"
@@ -2513,7 +2169,7 @@
                     "text": "Lactate"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00"
             },
@@ -2584,80 +2240,9 @@
                 },
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21"
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-rt-pcr-inconclusive",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-rt-pcr"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94500-6_SARS-CoV-2-RNA-Presence-in-Respiratory-specimen",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94500-6",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) RNA [Presence] in Respiratory specimen by NAA with probe detection"
-                        }
-                    ],
-                    "text": "SARS-CoV-2-RNA (PCR)"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-16T08:49:21+02:00",
-                "valueCodeableConcept": {
-                    "coding": [
-                        {
-                            "code": "419984006",
-                            "system": "http://snomed.info/sct",
-                            "display": "Inconclusive (qualifier value)"
-                        }
-                    ],
-                    "text": "SARS-CoV-2-RNA nicht eindeutig"
-                }
             },
             "request": {
                 "method": "POST",
@@ -2695,7 +2280,7 @@
                 ],
                 "status": "active",
                 "patient": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "dateTime": "2021-09-01",
                 "policy": [
@@ -2772,7 +2357,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -2839,7 +2424,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
@@ -2892,7 +2477,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-05"
             },
@@ -2957,7 +2542,7 @@
                     "text": "Oxygen [Partial pressure] in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3028,7 +2613,7 @@
                     "text": "pH of Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3105,7 +2690,7 @@
                     "text": "Oxygen [Partial pressure] in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21"
             },
@@ -3134,7 +2719,7 @@
                     ]
                 },
                 "patient": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "_occurrenceDateTime": {
                     "extension": [
@@ -3226,7 +2811,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-23T12:48:23+02:00"
             },
@@ -3297,7 +2882,7 @@
                     }
                 ],
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-02"
             },
@@ -3359,7 +2944,7 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-28T17:01:09+01:00"
             },
@@ -3424,7 +3009,7 @@
                     "text": "Carbon dioxide [Partial pressure] in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3465,7 +3050,7 @@
                 },
                 "status": "not-taken",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-19T08:43:33+02:00"
             },
@@ -3530,7 +3115,7 @@
                     "text": "Gas panel - Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "hasMember": [
@@ -3615,7 +3200,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-25"
             },
@@ -3654,7 +3239,7 @@
                     "text": "Dialysis"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "_performedDateTime": {
                     "extension": [
@@ -3718,7 +3303,7 @@
                     "text": "Oxygen saturation in Arterial blood"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3789,7 +3374,7 @@
                     "text": "Inhaled oxygen concentration"
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-09-21",
                 "valueQuantity": {
@@ -3862,160 +3447,9 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-16T08:49:21+02:00"
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-ab-ser-pl-ia-acnc",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-ser-pl-ia-acnc"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94769-7_SARS-CoV-2-Ab-Qn",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94769-7",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) Ab [Units/volume] in Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 antibodies quantitative"
-                },
-                "valueQuantity": {
-                    "system": "http://unitsofmeasure.org",
-                    "code": "[IU]/mL",
-                    "value": 240,
-                    "unit": "[IU]/mL"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-ab-panel-ser-pl-ia",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-ab-pnl-ser-pl-ia"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94504-8_SARS-CoV-2-Ab-Panel",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94504-8",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) Ab panel - Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 antibodies panel"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00",
-                "hasMember": [
-                    {
-                        "reference": "Observation/sars-cov-2-ab-ser-pl-ia-acnc"
-                    },
-                    {
-                        "reference": "Observation/sars-cov-2-igg-ser-pl-ia-acnc"
-                    },
-                    {
-                        "reference": "Observation/sars-cov-2-igg-ser-pl-ql-ia"
-                    },
-                    {
-                        "reference": "Observation/sars-cov-2-igm-ser-pl-ia-acnc"
-                    },
-                    {
-                        "reference": "Observation/sars-cov-2-igm-ser-pl-ql-ia"
-                    },
-                    {
-                        "reference": "Observation/sars-cov-2-iga-ser-pl-ia-acnc"
-                    },
-                    {
-                        "reference": "Observation/sars-cov-2-iga-ser-pl-ql-ia"
-                    }
-                ]
             },
             "request": {
                 "method": "POST",
@@ -4081,7 +3515,7 @@
                 ],
                 "status": "final",
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "effectiveDateTime": "2020-10-02"
             },
@@ -4143,80 +3577,13 @@
                     ]
                 },
                 "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
+                    "reference": "Patient/97523341-6c0d-45b0-a24d-5eb0a621f6f2"
                 },
                 "recordedDate": "2020-10-06"
             },
             "request": {
                 "method": "POST",
                 "url": "Condition"
-            }
-        },
-        {
-            "resource": {
-                "resourceType": "Observation",
-                "id": "sars-cov-2-igg-ser-pl-ia-acnc",
-                "meta": {
-                    "profile": [
-                        "https://www.netzwerk-universitaetsmedizin.de/fhir/StructureDefinition/sars-cov-2-igg-ser-pl-ia-acnc"
-                    ]
-                },
-                "identifier": [
-                    {
-                        "type": {
-                            "coding": [
-                                {
-                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                                    "code": "OBI"
-                                }
-                            ]
-                        },
-                        "system": "https://www.charite.de/fhir/CodeSystem/lab-identifiers",
-                        "value": "94505-5_SARS-CoV-2-IgG-Qn",
-                        "assigner": {
-                            "reference": "Organization/Charit\u00e9"
-                        }
-                    }
-                ],
-                "category": [
-                    {
-                        "coding": [
-                            {
-                                "system": "http://loinc.org",
-                                "code": "26436-6"
-                            },
-                            {
-                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                                "code": "laboratory"
-                            }
-                        ]
-                    }
-                ],
-                "code": {
-                    "coding": [
-                        {
-                            "code": "94505-5",
-                            "system": "http://loinc.org",
-                            "display": "SARS-CoV-2 (COVID-19) IgG Ab [Units/volume] in Serum or Plasma by Immunoassay"
-                        }
-                    ],
-                    "text": "SARS-CoV-2 IgG antibodies quantitative"
-                },
-                "valueQuantity": {
-                    "system": "http://unitsofmeasure.org",
-                    "code": "[arb'U]/mL",
-                    "value": 20,
-                    "unit": "[arb'U]/mL"
-                },
-                "status": "final",
-                "subject": {
-                    "reference": "Patient/4932de2e-ce5b-4460-94ca-fc05cacf9cc3"
-                },
-                "effectiveDateTime": "2020-10-19T08:43:33+02:00"
-            },
-            "request": {
-                "method": "POST",
-                "url": "Observation"
             }
         }
     ]
